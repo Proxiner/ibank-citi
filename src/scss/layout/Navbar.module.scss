@@ -1,0 +1,94 @@
+@use "../base/colors" as color;
+
+.navbar {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-left: 30px;
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6px;
+    cursor: pointer;
+
+    .logoImage {
+      font-size: 30px;
+      font-weight: 600;
+      color: color.$white;
+      padding: 10px 15px;
+      border-radius: 18px;
+      background-color: color.$secendry;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .logoText {
+      font-size: 18px;
+      font-weight: 900;
+      color: color.$black;
+      font-style: italic;
+    }
+  }
+
+  .action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+
+    .input {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 6px;
+
+      .inputText {
+        width: auto;
+        height: 25px;
+        background-color: transparent;
+        border: none;
+        border-left: 1px solid color.$black;
+        padding-left: 6px;
+      }
+      .inputText::placeholder {
+        font-size: 18px;
+        font-weight: 100;
+      }
+      .inputText:focus {
+        outline: none;
+      }
+    }
+
+    .themeToggleBox {
+      width: 80px;
+      height: 43px;
+      border-radius: 15px;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      background: rgb(220, 220, 220);
+      padding-left: 4px;
+      padding-right: 4px;
+
+      .themeToggler {
+        padding: 2px 15px;
+        background: color.$white;
+        border-radius: 12px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        .sun {
+          width: 30px;
+        }
+      }
+    }
+
+  }
+}
