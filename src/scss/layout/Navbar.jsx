@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./Navbar.module.scss";
 import searchIcon from "../../assets/search.svg";
 import sun from "../../assets/sun.svg";
+import moon from "../../assets/moon.svg"
 
 function Navbar() {
   const [justifyContent, setJustifyContent] = useState("flex-start");
@@ -36,7 +37,7 @@ function Navbar() {
           style={{ justifyContent: justifyContent }}
         >
           <button className={styles.themeToggler} onClick={handleClick}>
-            <img src={sun} className={styles.sun} />
+            {justifyContent === 'flex-start' ? <img src={sun} className="sun" alt="" /> :  <img src={moon}/> }
           </button>
         </div>
       </div>

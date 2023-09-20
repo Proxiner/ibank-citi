@@ -1,9 +1,12 @@
 @use './scss/base/colors' as color;
+@use './scss/base/fonts' as font;
 
 .container{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: start;
+    font-family: 'Mulish-medium';
     width: 100%;
     height: 100vh;
+    background-color: color.$white;
 }

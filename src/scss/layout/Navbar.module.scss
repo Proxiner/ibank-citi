@@ -7,6 +7,7 @@
   align-items: center;
   margin-top: 20px;
   padding-left: 30px;
+  font-family: 'Mulish-medium';
 
   .logo {
     display: flex;
@@ -75,7 +76,8 @@
       padding-right: 4px;
 
       .themeToggler {
-        padding: 2px 15px;
+        height: 80%;
+        padding: 0 15px;
         background: color.$white;
         border-radius: 12px;
         border: none;
@@ -85,7 +87,12 @@
         cursor: pointer;
 
         .sun {
-          width: 30px;
+          width: 30px !important;
+          height: 30px !important;
+        }
+        .moon{
+          width: 30px !important;
+          height: 30px !important;
         }
       }
     }
