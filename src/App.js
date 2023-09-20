@@ -1,8 +1,8 @@
 import React from "react";
 
 import styles from "./App.module.scss";
-import Navbar from "./app/layout/Navbar";
-import Sidebar from "./app/layout/Sidebar";
+import Navbar from "./scss/layout/Navbar";
+import Sidebar from "./scss/layout/Sidebar";
 
 const App = () => {
   return (
