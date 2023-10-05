@@ -1,0 +1,21 @@
+.Slider{
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    font-family: 'Mulish-black';
+}
+
+.cardBox{
+width: 100px;
+background-color: #e61c81;
+box-shadow: 19px 17px 69px -21px rgba(0,0,0,0.63);
+-webkit-box-shadow: 19px 17px 69px -21px rgba(0,0,0,0.63);
+-moz-box-shadow: 19px 17px 69px -21px rgba(0,0,0,0.63);
+}
+
+.quickTransferBox{
+    margin-left: 20px;
+
+}
