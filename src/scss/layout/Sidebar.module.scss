@@ -1,20 +1,24 @@
 @use "../base/colors" as color;
 
 .sidebar {
-  width: 4%;
+  width: 6%;
   height: 100%;
   color: black;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;  
-  align-items: end;
+  justify-content: flex-end;
   row-gap: 30%;
+  padding-right: 5px;
   border-right: 0.5px solid color.$border;
 
   .sidebarNavigation {
     list-style-type: none;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
     row-gap: 45px;
 
     li {
@@ -49,11 +53,11 @@
   }
 
   .settingContainer {
-    height: 20%;
+    width: 100%;
+    height: 10%;
     display: flex;
     align-items: center;
-    justify-content: end;
-    padding: 1rem 0;
+    justify-content: center;
 
     .settingBtn {
       border: none;

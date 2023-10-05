@@ -5,11 +5,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: -10px;
   padding-left: 20px;
   font-family: 'Mulish-medium';
   border: none;
   border-bottom: .5px solid color.$border;
+  padding: 10px;
 
   .logo {
     display: flex;
