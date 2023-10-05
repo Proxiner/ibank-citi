@@ -1,5 +1,6 @@
-@use './scss/base/colors' as color;
-@use './scss/base/fonts' as font;
+@use './scss/base/reset';
+@use './scss/base/colors' as colors;
+@use './scss/base/fonts';
 
 .container{
     display: flex;
@@ -8,5 +9,5 @@
     font-family: 'Mulish-medium';
     width: 100%;
     height: 100vh;
-    background-color: color.$white;
+    background-color: colors.$white;
 }

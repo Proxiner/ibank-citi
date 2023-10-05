@@ -4,26 +4,18 @@
   width: 4%;
   height: 100%;
   color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;  
-  align-items: end;
   row-gap: 30%;
-  padding-right: 30px;
+  // padding-right: 30px;
   border-right: 0.5px solid color.$border;
-
-  .navigationContainer {
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-  }
 
   .sidebarNavigation {
     list-style-type: none;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
     row-gap: 45px;
 
     li {
@@ -58,10 +50,13 @@
   }
 
   .settingContainer {
-    height: 20%;
+    width: 100%;
+    height: 10%;
     display: flex;
     align-items: center;
-    justify-content: end;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 1rem 0;
 
     .settingBtn {
       border: none;
