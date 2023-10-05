@@ -2,11 +2,13 @@
 
 .navbar {
   width: 90%;
+  height: 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
   padding-left: 30px;
+  margin-left: 100px;
   font-family: 'Mulish-medium';
 
   .logo {
