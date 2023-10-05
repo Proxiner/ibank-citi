@@ -1,4 +1,4 @@
-.Slider{
+.Slider {
 
     justify-content: center;
     align-items: center;
@@ -7,15 +7,21 @@
     font-family: 'Mulish-black';
 }
 
-.cardBox{
-width: 100px;
-background-color: #e61c81;
-box-shadow: 19px 17px 69px -21px rgba(0,0,0,0.63);
--webkit-box-shadow: 19px 17px 69px -21px rgba(0,0,0,0.63);
--moz-box-shadow: 19px 17px 69px -21px rgba(0,0,0,0.63);
+.cardBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 7px 13px 61px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 7px 13px 61px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 7px 13px 61px 0px rgba(0, 0, 0, 0.50);
+
+    span {
+        margin:2px 5px;
+    }
 }
 
-.quickTransferBox{
+.quickTransferBox {
     margin-left: 20px;
 
 }
