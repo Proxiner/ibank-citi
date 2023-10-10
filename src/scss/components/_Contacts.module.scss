@@ -1,0 +1,50 @@
+.container {
+  display: grid;
+  grid-template-columns: 50px auto auto;
+  width: 100%;
+  height: 100%;
+  gap: 1rem;
+
+  .profile {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  .info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 0.3rem;
+
+    h3{
+        font-family: Mulish-Light;
+        font-size: 1.1rem;
+    }
+
+    span{
+        font-size: 0.8rem;
+        color: #888;
+    }
+  }
+
+  .history{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #685DFB;
+    font-family: Mulish-Light;
+    font-size: 0.8rem;
+    gap: 0.3rem;
+  }
+}
