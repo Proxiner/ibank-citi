@@ -2,6 +2,7 @@ import React from 'react'
 import Navigation from '../assets/navigation.svg'
 import styles from "./Transfer.module.scss"
 import Tejarat from "../assets/Tejarat-Bank-logo.svg"
+import Sepah from "../assets/bank-sepah.svg"
 
 function QuickTransfer() {
   return (
@@ -16,8 +17,9 @@ function QuickTransfer() {
         </div>
 
         <div className={styles.cardBox}>
-          <img src={Navigation} alt="its just a button LOL" className={styles.slider} />
+          <img src={Sepah} alt="its just a button LOL" className={styles.slider} />
           <span>5859 ***** ***** 2245</span>
+          <span className={styles.userName}>Mohammad</span>
         </div>
         <button type='button' className={styles.confirmBtn}>Confirm Trasnfer</button>
       </div>
