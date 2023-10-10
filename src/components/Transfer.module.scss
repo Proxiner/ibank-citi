@@ -13,9 +13,9 @@
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    box-shadow: 7px 13px 61px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 7px 13px 61px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 7px 13px 61px 0px rgba(0, 0, 0, 0.50);
+    box-shadow: 7px 13px 61px 0px rgba(0, 0, 0, 0.20);
+    -webkit-box-shadow: 7px 13px 61px 0px rgba(0, 0, 0, 0.20);
+    -moz-box-shadow: 7px 13px 61px 0px rgba(0, 0, 0, 0.20);
 
     span {
         margin:2px 5px;
@@ -25,6 +25,10 @@
 .quickTransferBox {
     padding-left: 20px;
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120px;
 
     .confirmBtn{
         width: 100%;
