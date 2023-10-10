@@ -2,7 +2,6 @@
 
 .navbar {
   width: 90%;
-  height: 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,7 +9,7 @@
   font-family: 'Mulish-medium';
   border: none;
   border-bottom: .5px solid color.$border;
-  padding: 10px;
+  padding: 20px 10px;
 
   .logo {
     display: flex;

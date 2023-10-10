@@ -1,8 +1,10 @@
+@use "../scss/base/colors" as color;
+
 .Title {
     justify-content: start;
-    align-items: end;
+    align-items: center;
     display: flex;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Mulish-black';
 }
 
@@ -25,14 +27,16 @@
 }
 
 .quickTransferBox {
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 110px;
+    padding-left: 20px;
+    padding-bottom: 20px;
 
-}
-
-.Tejarat{
- padding-left:38px;
+    .confirmBtn{
+        width: 100%;
+        padding: 10px 0;
+        background-color: color.$confirmBtn;
+        border: none;
+        color: color.$white;
+        border-radius: 7px;
+        cursor: pointer;
+    }
 }
