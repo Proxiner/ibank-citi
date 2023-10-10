@@ -1,7 +1,6 @@
-.Slider {
-
-    justify-content: center;
-    align-items: center;
+.Title {
+    justify-content: start;
+    align-items: end;
     display: flex;
     font-size: 20px;
     font-family: 'Mulish-black';
@@ -11,17 +10,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 33 0px;
+    height: 52px;
+    border-radius: 10px;
+    padding: 10px;
     background-color: #fff;
-    box-shadow: 7px 13px 61px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 7px 13px 61px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 7px 13px 61px 0px rgba(0, 0, 0, 0.50);
+    box-shadow: 7px 13px 61px 0px rgba(0, 0, 0, 0.20);
+    -webkit-box-shadow: 7px 13px 61px 0px rgba(0, 0, 0, 0.20);
+    -moz-box-shadow: 7px 13px 61px 0px rgba(0, 0, 0, 0.20);
 
     span {
-        margin:2px 5px;
+        padding: 2px 50px 2px 5px;
     }
 }
 
 .quickTransferBox {
     margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 110px;
 
+}
+
+.Tejarat{
+ padding-left:38px;
 }
