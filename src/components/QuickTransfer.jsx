@@ -3,7 +3,7 @@ import styles from "./Transfer.module.scss"
 import CreditCardNumber from './CreditCardNumber'
 import Sepah from '../assets/bank-sepah.svg'
 
-function QuickTransfer({ creditCardNumber }) {
+function QuickTransfer() {
   return (
     <>
 
