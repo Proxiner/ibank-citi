@@ -9,6 +9,7 @@ const ContactList = ({ contacts, searchQuery }) => {
 
   return (
     <div className={styles.container}>
+      <h2>Contact List</h2>
       {filteredContacts.length > 0 ? (
         <section className={styles.contacts}>
           {filteredContacts.map((contact) => (
