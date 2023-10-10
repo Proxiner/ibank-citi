@@ -4,7 +4,7 @@ import searchIcon from "../../assets/search.svg";
 import sun from "../../assets/sun.svg";
 import moon from "../../assets/moon.svg"
 
-function Navbar() {
+function Navbar({creditCardNumber}) {
   const [justifyContent, setJustifyContent] = useState("flex-start");
 
   const handleClick = () => {

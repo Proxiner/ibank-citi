@@ -1,21 +1,15 @@
 import React from 'react'
-import Navigation from '../assets/navigation.svg'
 import styles from "./Transfer.module.scss"
-import Tejarat from "../assets/Tejarat-Bank-logo.svg"
-import Sepah from "../assets/bank-sepah.svg"
+import CreditCardNumber from './CreditCardNumber'
+import Sepah from '../assets/bank-sepah.svg'
 
-function QuickTransfer() {
+function QuickTransfer({ creditCardNumber }) {
   return (
     <>
 
       <div className={styles.quickTransferBox}>
         <h1 className={styles.Title}>Quick Money Transfer</h1>
-        <div className={styles.cardBox}>
-          <img src={Tejarat} alt="its just an SUS logo is n't this weird?" className={styles.Tejarat} />
-          <span>5859 ***** ***** 2245</span>
-          <img src={Navigation} alt="its just a button LOL" className={styles.slider} />
-        </div>
-
+        <CreditCardNumber creditCardNumber={"5859 **** **** 2245"} />
         <div className={styles.cardBox}>
           <img src={Sepah} alt="its just a button LOL" className={styles.slider} />
           <span>5859 ***** ***** 2245</span>
