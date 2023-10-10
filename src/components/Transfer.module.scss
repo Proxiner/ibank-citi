@@ -7,7 +7,6 @@
     font-size: 18px;
     font-family: 'Mulish-black';
 }
-
 .cardBox {
     display: flex;
     justify-content: center;
@@ -29,6 +28,10 @@
 .quickTransferBox {
     padding-left: 20px;
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120px;
 
     .confirmBtn{
         width: 100%;
@@ -40,3 +43,7 @@
         cursor: pointer;
     }
 }
+
+.Tejarat{
+    padding-left:38px;
+   }
