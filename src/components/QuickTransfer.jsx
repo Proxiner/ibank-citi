@@ -11,7 +11,7 @@ function QuickTransfer() {
         <h1 className={styles.Title}>Quick Money Transfer</h1>
         <CreditCardNumber creditCardNumber={"5859 **** **** 2245"} />
         <div className={styles.cardBox}>
-          <img src={Sepah} alt="its just a button LOL" className={styles.slider} />
+          <img src={Sepah} alt="its just a image, Isn't it weird?" className={styles.slider} />
           <span>5859 ***** ***** 2245</span>
           <span className={styles.userName}>Mohammad</span>
         </div>
