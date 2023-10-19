@@ -64,7 +64,7 @@ const CONTACTS = [
         <path d="M0,0H18.754V18.754H0Z" fill="none" opacity="0" />
       </svg>
     ),
-    showHistory: true,
+    showHistory: false,
   },
   {
     profile: johnDoe,
