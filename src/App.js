@@ -8,13 +8,13 @@ import QuickTransfer from "./components/QuickTransfer";
 const App = () => {
   return (
     <div className={styles.container}>
-      <Navbar />
-      <main className={styles.main}>
+      <Sidebar className={styles.Sidebar} />
 
-        <Sidebar className={styles.Sidebar} />
+      <main className={styles.main}>
+        <Navbar />
+
         <QuickTransfer className={styles.Transfer} />
       </main>
-
     </div>
   );
 };
