@@ -15,7 +15,7 @@
     border-radius: 10px;
     padding: 10px;
     background-color: color.$white;
-    box-shadow: 10px 10px 20px #88888821;
+    box-shadow: 10px 10px 20px #88888854;
     position: relative;
 
     .userName{
@@ -26,6 +26,7 @@
         background: color.$white;
         border-radius: 0 0 10px 10px;
         font-size: 14px;
+        box-shadow: 10px 10px 20px #88888854;
     }
 
     span {
@@ -51,8 +52,24 @@
         cursor: pointer;
         font-size: 17px;
     }
+
+    .captchaTitle{
+        font-size: 20px;
+        font-weight: 100;
+        color: color.$secendry;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        span{
+            font-size: 10px;
+            color: rgba(128, 128, 128, 0.576);
+        }
+    }
+    .captchaImg{
+        font-size: 13px;
+    }
 }
 
 .Tejarat{
-    padding-left:38px;
+   padding-left:38px;
 }

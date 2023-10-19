@@ -15,6 +15,12 @@ function QuickTransfer() {
           <span>5859 ***** ***** 2245</span>
           <span className={styles.userName}>Mohammad</span>
         </div>
+        <div className={styles.cardBox}>
+          <span className={styles.captchaTitle}>300,000 
+            <span>(IR)</span>
+          </span>
+          <span className={styles.captchaImg}>Im not a robot</span>
+        </div>
         <button type='button' className={styles.confirmBtn}>Confirm Trasnfer</button>
       </div>
 
