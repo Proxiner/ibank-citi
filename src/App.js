@@ -4,6 +4,7 @@ import styles from "./App.module.scss";
 import Navbar from "./scss/layout/Navbar";
 import Sidebar from "./scss/layout/Sidebar";
 import QuickTransfer from "./components/QuickTransfer";
+import MoneyTransfer from "./components/MoneyTransfer";
 
 const App = () => {
   return (
@@ -12,7 +13,7 @@ const App = () => {
 
       <main className={styles.main}>
         <Navbar />
-
+      <MoneyTransfer />
         <QuickTransfer className={styles.Transfer} />
       </main>
     </div>
