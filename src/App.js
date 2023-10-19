@@ -4,6 +4,7 @@ import styles from "./App.module.scss";
 import Navbar from "./scss/layout/Navbar";
 import Sidebar from "./scss/layout/Sidebar";
 import QuickTransfer from "./components/QuickTransfer";
+import Deposit from "./components/Deposit";
 
 const App = () => {
   return (
@@ -13,9 +14,13 @@ const App = () => {
       <main className={styles.main}>
         <Navbar />
 
-        <QuickTransfer className={styles.Transfer} />
+        <section className={styles.section}>
+          <QuickTransfer className={styles.Transfer} />
+          <Deposit/>
+        </section>
       </main>
-    </div>
+
+    </div >
   );
 };
 
