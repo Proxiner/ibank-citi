@@ -1,9 +1,10 @@
-@use "../scss/base/colors" as color;
+@use "../base/colors" as color;
+@use '../base/fonts' as font;
 
 .Title {
-    justify-content: start;
-    align-items: center;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     font-size: 18px;
     font-family: 'Mulish-black';
 }
@@ -40,7 +41,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 65%;
+    height: 60%;
 
     .confirmBtn{
         width: 100%;
@@ -51,6 +52,7 @@
         border-radius: 10px;
         cursor: pointer;
         font-size: 17px;
+        font-family: 'Mulish-medium';
     }
 
     .captchaTitle{
@@ -70,4 +72,8 @@
 
 .Tejarat{
    padding-left:38px;
+}
+
+.arrowLeft{
+    transform: rotate(180deg);
 }

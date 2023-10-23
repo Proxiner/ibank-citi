@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Sidebar.module.scss";
-import settingIcon from "../../assets/settings.svg";
+import settingIcon from "../assets/settings.svg";
 
 function Sidebar() {
   return (

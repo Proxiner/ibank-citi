@@ -1,10 +1,10 @@
 import React from "react";
 
 import styles from "./App.module.scss";
-import Navbar from "./scss/layout/Navbar";
-import Sidebar from "./scss/layout/Sidebar";
+import Navbar from "./layout/Navbar";
+import Sidebar from "./layout/Sidebar";
 import QuickTransfer from "./components/QuickTransfer";
-import Deposit from "./components/Deposit";
+// import Deposit from "./components/Deposit";
 import MyCards from "./components/MyCards";
 
 const App = () => {

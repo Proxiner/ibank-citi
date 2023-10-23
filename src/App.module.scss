@@ -1,11 +1,11 @@
-@use './scss/base/reset';
-@use './scss/base/colors' as colors;
-@use './scss/base/fonts' as font;
+@use './base/reset';
+@use './base/colors' as colors;
+@use './base/fonts' as font;
 
 .container{
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: flex-start;
     font-family: 'Mulish-medium';
     width: 100%;
     height: 100vh;
@@ -15,7 +15,7 @@
 .main{
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     justify-content: space-between;
     height: 100%;
     width: 90%;
