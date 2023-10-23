@@ -1,9 +1,9 @@
-@use "../scss/base/colors" as color;
+@use "../base/colors" as color;
 
 .Title {
-    justify-content: start;
-    align-items: center;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     font-size: 18px;
     font-family: 'Mulish-black';
 }

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.scss";
-import searchIcon from "../../assets/search.svg";
-import sun from "../../assets/sun.svg";
-import moon from "../../assets/moon.svg"
+import searchIcon from "../assets/search.svg";
+import sun from "../assets/sun.svg";
+import moon from "../assets/moon.svg"
 
 function Navbar({creditCardNumber}) {
   const [justifyContent, setJustifyContent] = useState("flex-start");
@@ -37,7 +37,7 @@ function Navbar({creditCardNumber}) {
           style={{ justifyContent: justifyContent }}
         >
           <button className={styles.themeToggler} onClick={handleClick}>
-            {justifyContent === 'flex-start' ? <img src={sun} className="sun" alt="" /> :  <img src={moon}/> }
+            {justifyContent === 'flex-start' ? <img src={sun} className="sun" alt="" /> :  <img src={moon} alt="moon icon"/> }
           </button>
         </div>
       </div>
