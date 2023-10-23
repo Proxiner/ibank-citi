@@ -11,11 +11,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 52px;
+    height: 17%;
     border-radius: 10px;
     padding: 10px;
     background-color: color.$white;
-    box-shadow: 10px 10px 20px #88888854;
+    box-shadow: 10px 10px 20px #8888881d;
     position: relative;
 
     .userName{
@@ -26,7 +26,7 @@
         background: color.$white;
         border-radius: 0 0 10px 10px;
         font-size: 14px;
-        box-shadow: 10px 10px 20px #88888854;
+        box-shadow: 10px 10px 20px #8888881d;
     }
 
     span {
@@ -40,7 +40,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 60%;
+    height: 65%;
 
     .confirmBtn{
         width: 100%;
