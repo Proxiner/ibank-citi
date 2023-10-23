@@ -31,7 +31,7 @@ function QuickTransfer() {
             <form onSubmit={handleSubmit}  className={styles.captchaImg}>
               <GoogleRecaptcha
                 ref={recaptchaRef}
-                sitekey="6LctSsMoAAAAAPnZK50SD-m4azWKuq7wIv_o5oFa"
+                sitekey="6LdoUMMoAAAAAPZElFATmjJzyzaGJiFmvSaTCdM1"
               />
               <button type="submit">Submit</button>
             </form>
