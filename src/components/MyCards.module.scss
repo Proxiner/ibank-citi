@@ -1,7 +1,11 @@
 @use "../scss/base/colors" as color;
 
-.deposit{
+.myCards{
     width: 24%;
+}
+
+.deposit{
+    width: 100%;
     background: #5D72FB1C;
     display: flex;
     flex-direction: column;

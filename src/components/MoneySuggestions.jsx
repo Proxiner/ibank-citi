@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Deposit.module.scss'
+import styles from './MyCards.module.scss'
 
 function MoneySuggestions({suggestion}) {
   return (
