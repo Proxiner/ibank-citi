@@ -42,3 +42,33 @@
     border: none;
     cursor: pointer;
 }
+
+.inputPart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.depositInput{
+    width: 180px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.depositButton{
+    margin-left: 15px;
+    width: 90px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    background-color: #685dfb;
+    color: #fff;
+}
+
+.depositInput:focus{
+border: none;
+outline: none;
+}
