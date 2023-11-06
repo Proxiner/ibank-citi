@@ -3,8 +3,8 @@ import React from "react";
 import styles from "./_PopularContacts.module.scss";
 
 import Contacts from "../components/Contacts";
-import johnDoe from "../../assets/john-doe.svg";
-import sarahFlorance from "../../assets/sarah-florance.svg";
+import johnDoe from "../assets/john-doe.svg";
+import sarahFlorance from "../assets/sarah-florance.svg";
 
 const PopularContacts = () => {
 
