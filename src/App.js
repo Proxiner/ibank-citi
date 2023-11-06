@@ -7,8 +7,8 @@ import Sidebar from "./layout/Sidebar";
 import QuickTransfer from "./components/QuickTransfer";
 // import Deposit from "./components/Deposit";
 import MyCards from "./components/MyCards";
-import ContactList from "./scss/layout/ContactList";
-import PopularContacts from "./scss/layout/PopularContacts";
+import ContactList from "./layout/ContactList";
+import PopularContacts from "./layout/PopularContacts";
 import Search from "./scss/components/Search";
 
 import frankWilliam from "./assets/frank-william.svg";
