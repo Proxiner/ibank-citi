@@ -1,8 +1,8 @@
 .container {
   display: grid;
-  grid-template-columns: 50px auto auto;
-  width: 100%;
-  height: 100%;
+  grid-template-columns: 10% auto auto;
+  width: 45%;
+  height: 45%;
   gap: 1rem;
 
   .profile {
@@ -37,7 +37,6 @@
   }
 
   .history{
-    display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 100%;

@@ -129,32 +129,36 @@ const App = () => {
   ];
 
   return (
-    // <>
-    //   <Search
-    //     value={searchQuery}
-    //     placeholder="Search contacts..."
-    //     onChange={(e) => setSearchQuery(e.target.value)}
-    //   />
-    //   <PopularContacts contacts={CONTACTS} searchQuery={searchQuery} />
-    //   <ContactList contacts={CONTACTS} searchQuery={searchQuery} />
-    // </>
-    <div className={styles.container}>
-      <div className={styles.navbarSection}>
-        <Navbar />
+    <>
+
+      <div className={styles.container}>
+
+
+        <div className={styles.navbarSection}>
+          <Navbar />
+        </div>
+
+        <div className={styles.sidebarContainer}>
+          <Sidebar className={styles.Sidebar} />
+        </div>
+
+        <div className={styles.transferSection}>
+          <QuickTransfer className={styles.Transfer} />
+        </div>
+
+        <div className={styles.myCardsSection}>
+          <MyCards />
+        </div>
       </div>
 
-      <div className={styles.sidebarContainer}>
-        <Sidebar className={styles.Sidebar} />
-      </div>
-
-      <div className={styles.transferSection}>
-        <QuickTransfer className={styles.Transfer} />
-      </div>
-
-      <div className={styles.myCardsSection}>
-        <MyCards />
-      </div>
-    </div>
+      <Search
+        value={searchQuery}
+        placeholder="Search contacts..."
+        onChange={(e) => setSearchQuery(e.target.value)}
+      />
+      <PopularContacts contacts={CONTACTS} searchQuery={searchQuery} />
+      <ContactList contacts={CONTACTS} searchQuery={searchQuery} />
+    </>
   );
 };
 
