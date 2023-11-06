@@ -14,8 +14,6 @@ function QuickTransfer() {
   }
 
   return (
-    <>
-
       <div className={styles.quickTransferBox}>
         <h1 className={styles.Title}>Quick Money Transfer</h1>
         <CreditCardNumber creditCardNumber={"5859 **** **** 2245"} />
@@ -29,17 +27,15 @@ function QuickTransfer() {
             <span>(IR)</span>
           </span>
             <form onSubmit={handleSubmit}  className={styles.captchaImg}>
-              <GoogleRecaptcha
+              {/* <GoogleRecaptcha
                 ref={recaptchaRef}
                 sitekey="6LdoUMMoAAAAAPZElFATmjJzyzaGJiFmvSaTCdM1"
-              />
+              /> */}
               <button type="submit">Submit</button>
             </form>
         </div>
         <button type='button' className={styles.confirmBtn}>Confirm Trasnfer</button>
       </div>
-
-    </>
   )
 }
 
