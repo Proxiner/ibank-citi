@@ -28,5 +28,9 @@
   font-family: "Mulish-regular";
   src: url("../fonts/static/Mulish-Regular.ttf");
 }
+@font-face {
+  font-family: "Mulish-extraLight";
+  src: url(../fonts/static/Mulish-ExtraLight.ttf);
+}
 
 /*# sourceMappingURL=main.css.map */

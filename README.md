@@ -8,6 +8,12 @@ In the project directory, you can run:
 
 ### `npm start`
 
+you can also start compiling sass with this command:
+
+### `sass --watch ./src/main.scss:dist/main.css`
+
+**notice if you get any type of stylish glitches you need to run the sass compiler command above☝☝
+
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
