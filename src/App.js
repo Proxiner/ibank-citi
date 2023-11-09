@@ -13,6 +13,7 @@ import frankWilliam from "./assets/frank-william.svg";
 import nickKrankston from "./assets/nick-krankston.svg";
 import johnDoe from "./assets/john-doe.svg";
 import sarahFlorance from "./assets/sarah-florance.svg";
+import CardImage from "./layout/CardImage";
 
 const App = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -136,6 +137,10 @@ const App = () => {
 
       <div className={styles.sidebarContainer}>
         <Sidebar className={styles.Sidebar} />
+      </div>
+
+      <div className={styles.cardImageSection}>
+        <CardImage title={"Blue"} numberCard={"4766 1973 **** 2751"} owner={"Erfan Rezaie"}/>
       </div>
 
       <div className={styles.transferSection}>
