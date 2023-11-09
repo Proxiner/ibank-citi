@@ -6,9 +6,9 @@ import Navbar from "./layout/Navbar";
 import Sidebar from "./layout/Sidebar";
 import QuickTransfer from "./components/QuickTransfer";
 import MyCards from "./components/MyCards";
-import Search from './components/Search';
-import PopularContacts from './layout/PopularContacts';
-import ContactList from './layout/ContactList';
+import Search from "./components/Search";
+import PopularContacts from "./layout/PopularContacts";
+import ContactList from "./layout/ContactList";
 import frankWilliam from "./assets/frank-william.svg";
 import nickKrankston from "./assets/nick-krankston.svg";
 import johnDoe from "./assets/john-doe.svg";
@@ -145,7 +145,15 @@ const App = () => {
       <div className={styles.myCardsSection}>
         <MyCards />
       </div>
-
+      <div className={styles.contactsSection}>
+        <Search
+          value={searchQuery}
+          placeholder="Search contacts..."
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
+        <PopularContacts contacts={CONTACTS} searchQuery={searchQuery} />
+        <ContactList contacts={CONTACTS} searchQuery={searchQuery} />
+      </div>
     </div>
   );
 };
