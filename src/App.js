@@ -139,6 +139,10 @@ const App = () => {
         <Sidebar className={styles.Sidebar} />
       </div>
 
+      <div className={styles.cardImageSection}>
+        <CardImage title={"Blue"} numberCard={"4766 1973 **** 2751"} owner={"Erfan Rezaie"}/>
+      </div>
+
       <div className={styles.transferSection}>
         <QuickTransfer className={styles.Transfer} />
       </div>
