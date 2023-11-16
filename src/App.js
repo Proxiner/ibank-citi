@@ -138,9 +138,8 @@ const App = () => {
       <div className={styles.sidebarContainer}>
         <Sidebar className={styles.Sidebar} />
       </div>
-
       <div className={styles.cardImageSection}>
-        <CardImage/>
+        <CardImage />
       </div>
 
       <div className={styles.transferSection}>
