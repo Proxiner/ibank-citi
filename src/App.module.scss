@@ -59,12 +59,11 @@
         width: 60%;
         height: 75%;
     }
-
-    .transactions{
-        grid-row: 1/3;
+    .transactionsContainer{
+        grid-row: 2/3;
         grid-column: 4/4;
-        display: flex;
-
+        width: 80%;
+        height: 75%;
     }
     
 }

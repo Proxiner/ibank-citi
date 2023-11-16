@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "./MyCards.module.scss"
+import styles from "./_MyCards.module.scss"
 function ChangerBtn({icon, title}) {
     return (
         <button className={styles.changerBtn}>

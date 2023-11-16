@@ -14,7 +14,7 @@ import nickKrankston from "./assets/nick-krankston.svg";
 import johnDoe from "./assets/john-doe.svg";
 import sarahFlorance from "./assets/sarah-florance.svg";
 import CardImage from "./layout/CardImage";
-import Transactions from "./components/Transactions";
+import Transactions from "./layout/Transactions";
 
 const App = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -138,10 +138,8 @@ const App = () => {
       <div className={styles.sidebarContainer}>
         <Sidebar className={styles.Sidebar} />
       </div>
-
-
       <div className={styles.cardImageSection}>
-        <CardImage/>
+        <CardImage />
       </div>
 
       <div className={styles.transferSection}>
@@ -150,10 +148,7 @@ const App = () => {
 
       <div className={styles.myCardsSection}>
         <MyCards />
-      </div> 
-           <div className={styles.transactions}>
-            <Transactions/>
-           </div>
+      </div>
       <div className={styles.contactsSection}>
         <Search
           value={searchQuery}
@@ -162,6 +157,9 @@ const App = () => {
         />
         <PopularContacts contacts={CONTACTS} searchQuery={searchQuery} />
         <ContactList contacts={CONTACTS} searchQuery={searchQuery} />
+      </div>
+      <div className={styles.transactionsContainer}>
+        <Transactions />
       </div>
     </div>
   );
