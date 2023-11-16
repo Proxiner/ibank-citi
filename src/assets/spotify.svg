@@ -1,0 +1,10 @@
+<svg id="vuesax_linear_spotify" data-name="vuesax/linear/spotify" xmlns="http://www.w3.org/2000/svg" width="28.851" height="28.851" viewBox="0 0 28.851 28.851">
+  <g id="spotify">
+    <path id="BG_1" data-name="BG 1" d="M0,0H28.851V28.851H0Z" fill="none" opacity="0.58"/>
+    <path id="Vector" d="M24.042,12.021A12.021,12.021,0,1,1,12.021,0,12.021,12.021,0,0,1,24.042,12.021Z" transform="translate(2.404 2.404)" fill="none" stroke="#1dd460" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Vector-2" data-name="Vector" d="M0,.942A14.147,14.147,0,0,1,13.1,2.505" transform="translate(7.934 10.237)" fill="none" stroke="#1dd460" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Vector-3" data-name="Vector" d="M0,.687a10.16,10.16,0,0,1,9.617,1.2" transform="translate(9.497 14.219)" fill="none" stroke="#1dd460" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Vector-4" data-name="Vector" d="M0,.537a7.728,7.728,0,0,1,7.213.841" transform="translate(10.579 17.976)" fill="none" stroke="#1dd460" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Vector-5" data-name="Vector" d="M0,0H28.851V28.851H0Z" fill="none" opacity="0"/>
+  </g>
+</svg>
