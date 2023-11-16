@@ -22,13 +22,13 @@ function CardImage() {
       </SwiperSlide>
       <SwiperSlide className={styles.swiperSlide}>
         <div className={styles.CardImageDetailsContainer}>
-          <CardImageDetails title={"Blue"} numberCard={"2235 6618 **** 1864"} owner={"Erfan Rezaie"} />
+          <CardImageDetails title={"Red"} numberCard={"2235 6618 **** 1864"} owner={"Erfan Rezaie"} />
         </div>
         <div className={styles.swiperSlideBefore}></div>
       </SwiperSlide>
       <SwiperSlide className={styles.swiperSlide}>
         <div className={styles.CardImageDetailsContainer}>
-          <CardImageDetails title={"Blue"} numberCard={"2235 6618 **** 1864"} owner={"Erfan Rezaie"} />
+          <CardImageDetails title={"Green"} numberCard={"2235 6618 **** 1864"} owner={"Erfan Rezaie"} />
         </div>
         <div className={styles.swiperSlideBefore}></div>
       </SwiperSlide>
