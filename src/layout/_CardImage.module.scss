@@ -1,37 +1,59 @@
 @use "../base/colors" as color;
 @use '../base/fonts' as font;
 
-.cardImage{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    border-radius: 30px ;
-    background-color: color.$cardBGColor;
-    padding: 30px;
-    padding-bottom: 30px;
-    padding-top: 80px;
-    color: #fff;
-    background-image: url(../assets/card-background.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
+.cardImage {
+    width: 500px;
+    height: 350px;
 
-    h1{
+    .swiperSlide {
+        background-image: url(../assets/card-background.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: color.$cardBGColor;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 30px;
+        padding: 30px;
+        padding-bottom: 30px;
+        padding-top: 80px;
+        color: #fff;
+        position: relative;
+    }
+
+    .swiperSlide .CardImageDetailsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .swiperSlide .swiperSlideBefore {
+        width: 60px;
+        height: 50px;
+        position: absolute;
+        top: 20%;
+        z-index: 20;
+        right: -20px;
+        background: color.$white;
+        border-radius: 10px;
+    }
+
+    h1 {
         font-size: 30px;
         font-weight: 100;
     }
-    .details{
-        display: flex; 
+
+    .details {
+        display: flex;
         flex-direction: column;
         row-gap: 10px;
 
-        .numberCard{
+        .numberCard {
             font-size: 25px;
             font-family: 'Mulish-light';
         }
-        .owner{
+
+        .owner {
             font-size: 16px;
             font-family: 'Mulish-light';
         }
