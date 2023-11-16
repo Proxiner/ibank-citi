@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './MyCards.module.scss'
+import styles from './_MyCards.module.scss'
 import Deposit from './Deposit'
 import CreditCardNumber from './CreditCardNumber'
 import ChangerBtn from './ChangerBtn'

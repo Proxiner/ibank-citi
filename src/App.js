@@ -14,6 +14,7 @@ import nickKrankston from "./assets/nick-krankston.svg";
 import johnDoe from "./assets/john-doe.svg";
 import sarahFlorance from "./assets/sarah-florance.svg";
 import CardImage from "./layout/CardImage";
+import Transactions from "./layout/Transactions";
 
 const App = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -157,6 +158,9 @@ const App = () => {
         />
         <PopularContacts contacts={CONTACTS} searchQuery={searchQuery} />
         <ContactList contacts={CONTACTS} searchQuery={searchQuery} />
+      </div>
+      <div className={styles.transactionsContainer}>
+        <Transactions />
       </div>
     </div>
   );

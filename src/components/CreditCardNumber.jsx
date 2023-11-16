@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "./Transfer.module.scss"
+import styles from "./_Transfer.module.scss"
 import Tejarat from "../assets/Tejarat-Bank-logo.svg"
 
 function CreditCardNumber({ creditCardNumber }) {

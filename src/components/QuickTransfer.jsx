@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import styles from "./Transfer.module.scss"
+import styles from "./_Transfer.module.scss"
 import CreditCardNumber from './CreditCardNumber'
 import Sepah from '../assets/bank-sepah.svg'
 
