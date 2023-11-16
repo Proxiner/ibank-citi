@@ -14,6 +14,7 @@ import nickKrankston from "./assets/nick-krankston.svg";
 import johnDoe from "./assets/john-doe.svg";
 import sarahFlorance from "./assets/sarah-florance.svg";
 import CardImage from "./layout/CardImage";
+import Transactions from "./components/Transactions";
 
 const App = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -138,6 +139,7 @@ const App = () => {
         <Sidebar className={styles.Sidebar} />
       </div>
 
+
       <div className={styles.cardImageSection}>
         <CardImage/>
       </div>
@@ -148,7 +150,10 @@ const App = () => {
 
       <div className={styles.myCardsSection}>
         <MyCards />
-      </div>
+      </div> 
+           <div className={styles.transactions}>
+            <Transactions/>
+           </div>
       <div className={styles.contactsSection}>
         <Search
           value={searchQuery}
