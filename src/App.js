@@ -15,6 +15,7 @@ import johnDoe from "./assets/john-doe.svg";
 import sarahFlorance from "./assets/sarah-florance.svg";
 import CardImage from "./layout/CardImage";
 import Transactions from "./layout/Transactions";
+import Chart from "./layout/ChartSection";
 
 const App = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -160,6 +161,9 @@ const App = () => {
       </div>
       <div className={styles.transactionsContainer}>
         <Transactions />
+      </div>
+      <div className={styles.chartContainer}>
+        <Chart />
       </div>
     </div>
   );
