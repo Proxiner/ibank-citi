@@ -2,15 +2,13 @@ import React, { useState } from "react";
 import styles from "./Navbar.module.scss";
 import searchIcon from "../assets/search.svg";
 import sun from "../assets/sun.svg";
-import moon from "../assets/moon.svg"
+import moon from "../assets/moon.svg";
 
-function Navbar({creditCardNumber}) {
-  const [justifyContent, setJustifyContent] = useState("flex-start");
+function Navbar({ creditCardNumber }) {
+  const [darkModeToggler, setDarkModeToggler] = useState("4px");
 
   const handleClick = () => {
-    setJustifyContent(
-      justifyContent === "flex-start" ? "flex-end" : "flex-start"
-    );
+    setDarkModeToggler(darkModeToggler === "4px" ? "18px" : "4px");
   };
   return (
     <nav className={styles.navbar}>
@@ -32,12 +30,17 @@ function Navbar({creditCardNumber}) {
             />
           </div>
         </form>
-        <div
-          className={styles.themeToggleBox}
-          style={{ justifyContent: justifyContent }}
-        >
-          <button className={styles.themeToggler} onClick={handleClick}>
-            {justifyContent === 'flex-start' ? <img src={sun} className="sun" alt="" /> :  <img src={moon} alt="moon icon"/> }
+        <div className={styles.themeToggleBox}>
+          <button
+            className={styles.themeToggler}
+            style={{ right: darkModeToggler }}
+            onClick={handleClick}
+          >
+            {darkModeToggler === "4px" ? (
+              <img src={sun} className="sun" alt="Sun Icon" />
+            ) : (
+              <img src={moon} alt="Moon Icon" />
+            )}
           </button>
         </div>
       </div>

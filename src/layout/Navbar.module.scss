@@ -71,11 +71,10 @@
       height: 43px;
       border-radius: 15px;
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
       background: rgb(220, 220, 220);
-      padding-left: 4px;
-      padding-right: 4px;
+      position: relative;
 
       .themeToggler {
         height: 80%;
@@ -87,6 +86,9 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        position: absolute;
+        top: 5px;
+        transition: all .2s ease-in-out;
 
         .sun {
           width: 30px !important;
