@@ -13,7 +13,7 @@ function CreditCardNumber({ creditCardNumber, imageSrc }) {
           </g>
         </svg>
 
-        <img src={imageSrc} alt="its just an SUS logo is n't this weird?" className={styles.Tejarat} />
+        <img src={imageSrc} alt="Tejarat Icon" className={styles.Tejarat} />
         <span>{creditCardNumber}</span>
         <svg id="vuesax_outline_arrow-circle-right" data-name="vuesax/outline/arrow-circle-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <g id="arrow-circle-right">

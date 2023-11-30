@@ -13,12 +13,12 @@ function Deposit() {
         <button className={styles.depositButton}>Deposit</button>
       </section>
       <div className={styles.suggestions}>
-      <span className={styles.moneySuggestions}>200,000$</span>
-      <span className={styles.moneySuggestions}>1200,000$</span>
-      <span className={styles.moneySuggestions}>900,000$</span>
-      <span className={styles.moneySuggestions}>500,000$</span>
-      <span className={styles.moneySuggestions}>100,000$</span>
-      <span className={styles.moneySuggestions}>1900,000$</span>
+        <span>200,000$</span>
+        <span>1200,000$</span>
+        <span>900,000$</span>
+        <span>500,000$</span>
+        <span>100,000$</span>
+        <span>1900,000$</span>
         <button className={styles.btn}>...</button>
       </div>
     </div>

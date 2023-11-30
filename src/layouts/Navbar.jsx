@@ -4,14 +4,14 @@ import searchIcon from "../assets/search.svg";
 import sun from "../assets/sun.svg";
 import moon from "../assets/moon.svg";
 
-function Navbar({ creditCardNumber }) {
+function Navbar() {
   const [darkModeToggler, setDarkModeToggler] = useState("4px");
 
   const handleClick = () => {
     setDarkModeToggler(darkModeToggler === "4px" ? "18px" : "4px");
   };
   return (
-    <nav className={styles.navbar}>
+    <nav>
       {/* left side of navbar */}
       <div className={styles.logo}>
         <h1 className={styles.logoImage}>B</h1>
@@ -22,7 +22,7 @@ function Navbar({ creditCardNumber }) {
       <div className={styles.action}>
         <form action="#">
           <div className={styles.input}>
-            <img src={searchIcon} alt="" />
+            <img src={searchIcon} alt="Search Icon" />
             <input
               type="text"
               className={styles.inputText}

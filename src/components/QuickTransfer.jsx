@@ -49,7 +49,7 @@ function QuickTransfer() {
         <div className={styles.cardBox}>
           <img
             src={Sepah}
-            alt="its just , Isn't it weird?"
+            alt="Sepah Icon"
             className={styles.slider}
           />
           <span>5859 ***** ***** 2245</span>

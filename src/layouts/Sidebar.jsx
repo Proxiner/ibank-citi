@@ -4,7 +4,7 @@ import settingIcon from "../assets/settings.svg";
 
 function Sidebar() {
   return (
-    <div className={styles.sidebar}>
+    <sidebar>
       <div className={styles.navigationContainer}>
         <ul className={styles.sidebarNavigation}>
           <li>
@@ -129,10 +129,10 @@ function Sidebar() {
 
       <div className={styles.settingContainer}>
         <button type="button" className={styles.settingBtn}>
-          <img src={settingIcon} alt="" />
+          <img src={settingIcon} alt="Setting Icon" />
         </button>
       </div>
-    </div>
+    </sidebar>
   );
 }
 

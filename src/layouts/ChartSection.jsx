@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./_Chart.module.scss";
 import Chart from "chart.js/auto";
 import { Bar } from "react-chartjs-2";
+// Chart Datas 
 
 function ChartSection() {
   const labels = ["Dribbble", "Spotify", "Be`", "NEM"];

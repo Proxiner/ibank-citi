@@ -34,6 +34,14 @@
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    position: relative;
+
+    .kingIcon{
+      width: 20px;
+      position: absolute;
+      top: 6px;
+      right: 20px;
+    }
 
     .mainDetail {
       display: flex;

@@ -2,20 +2,20 @@ import React, { useState } from "react";
 
 import styles from "./App.module.scss";
 
-import Navbar from "./layout/Navbar";
-import Sidebar from "./layout/Sidebar";
+import Navbar from "./layouts/Navbar";
+import Sidebar from "./layouts/Sidebar";
 import QuickTransfer from "./components/QuickTransfer";
 import MyCards from "./components/MyCards";
 import Search from "./components/Search";
-import PopularContacts from "./layout/PopularContacts";
-import ContactList from "./layout/ContactList";
+import PopularContacts from "./layouts/PopularContacts";
+import ContactList from "./layouts/ContactList";
 import frankWilliam from "./assets/frank-william.svg";
 import nickKrankston from "./assets/nick-krankston.svg";
 import johnDoe from "./assets/john-doe.svg";
 import sarahFlorance from "./assets/sarah-florance.svg";
-import CardImage from "./layout/CardImage";
-import Transactions from "./layout/Transactions";
-import Chart from "./layout/ChartSection";
+import CardImage from "./layouts/CardImage";
+import Transactions from "./layouts/Transactions";
+import Chart from "./layouts/ChartSection";
 
 const App = () => {
   const [searchQuery, setSearchQuery] = useState("");

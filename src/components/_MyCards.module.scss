@@ -61,28 +61,28 @@
     row-gap: 20px;
 }
 
-.moneySuggestions {
-    background: #685DFB3D;
-    color: #685DFBB0;
-    padding: 10px;
-    border-radius: 17px;
-    cursor: pointer;
-    transition: .2s ease-in-out;
-    font-size: 13px;
-}
-
-.moneySuggestions:hover {
-    background-color: #685DFBA3;
-    color: #3B2FE3;
-    font-weight: bold;
-}
-
 .suggestions {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     row-gap: 7px;
+
+    span {
+        background: #685DFB3D;
+        color: #685DFBB0;
+        padding: 10px;
+        border-radius: 17px;
+        cursor: pointer;
+        transition: .2s ease-in-out;
+        font-size: 13px;
+    }
+    
+    span:hover {
+        background-color: #685DFBA3;
+        color: #3B2FE3;
+        font-weight: bold;
+    }
 }
 
 .btn {
