@@ -64,10 +64,10 @@ function QuickTransfer() {
             <span>(IR)</span>
           </span>
           <form onSubmit={handleSubmit} className={styles.captchaImg}>
-            {/* <GoogleRecaptcha
+            <GoogleRecaptcha
                 ref={recaptchaRef}
                 sitekey="6LdoUMMoAAAAAPZElFATmjJzyzaGJiFmvSaTCdM1"
-              /> */}
+              />
             <button type="submit">Submit</button>
           </form>
         </div>
