@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./_Transactions.module.scss";
 import TransactionCard from "../components/TransactionCard";
 import dribbbleIcon from "../assets/dribble.svg";
@@ -8,12 +8,32 @@ import NemIcon from "../assets/nem.svg";
 import { v4 } from "uuid";
 
 function Transactions() {
+
+  async function fetchData() {
+    const response = await fetch("https://dummyjson.com/products/")
+    const data = response.json()
+    const result = data
+    return result
+  }
+  const cards = useRef()
+  useEffect(() => {
+    async function fetchDataAndUpdate() {
+      const data = await fetchData()
+      cards.current.children[0].lastElementChild.textContent = `$${data.products[0].price},000`
+      cards.current.children[1].lastElementChild.textContent = `$${data.products[1].price},000`
+      cards.current.children[2].lastElementChild.textContent = `$${data.products[2].price},000`
+      cards.current.children[3].lastElementChild.textContent = `$${data.products[3].price},000`
+    }
+
+    fetchDataAndUpdate()
+  }, [])
+
   const [transaction, setTransaction] = useState([
     {
       iconBG: "#FF075C61",
       title: "Dribbble",
       date: "28 September 2022",
-      price: "$2100,000",
+      price: "$200,000",
       imageSrc: dribbbleIcon,
       mostValuable: true
     },
@@ -30,7 +50,7 @@ function Transactions() {
       title: "Behance",
       date: "28 September 2022",
       price: "$100,000",
-      imageSrc:BeIcon,
+      imageSrc: BeIcon,
       mostValuable: false
     },
     {
@@ -49,7 +69,7 @@ function Transactions() {
           <h1>Transactions</h1>
           <span>(Recent)</span>
         </div>
-        <div className={styles.cardContainer}>
+        <div className={styles.cardContainer} ref={cards}>
           {transaction.map((transaction) => (
             <TransactionCard key={v4()} {...transaction} />
           ))}
