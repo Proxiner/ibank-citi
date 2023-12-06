@@ -133,24 +133,24 @@ const App = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.navbarSection}>
+      <section className={styles.navbarSection}>
         <Navbar />
-      </div>
-      <div className={styles.sidebarContainer}>
+      </section>
+      <section className={styles.sidebarContainer}>
         <Sidebar className={styles.Sidebar} />
-      </div>
-      <div className={styles.cardImageSection}>
+      </section>
+      <section className={styles.cardImageSection}>
         <CardImage />
-      </div>
+      </section>
 
-      <div className={styles.transferSection}>
+      <section className={styles.transferSection}>
         <QuickTransfer className={styles.Transfer} />
-      </div>
+      </section>
 
-      <div className={styles.myCardsSection}>
+      <section className={styles.myCardsSection}>
         <MyCards />
-      </div>
-      <div className={styles.contactsSection}>
+      </section>
+      <section className={styles.contactsSection}>
         <Search
           value={searchQuery}
           placeholder="Search contacts..."
@@ -158,13 +158,13 @@ const App = () => {
         />
         <PopularContacts contacts={CONTACTS} searchQuery={searchQuery} />
         <ContactList contacts={CONTACTS} searchQuery={searchQuery} />
-      </div>
-      <div className={styles.transactionsContainer}>
+      </section>
+      <section className={styles.transactionsContainer}>
         <Transactions />
-      </div>
-      <div className={styles.chartContainer}>
+      </section>
+      <section className={styles.chartContainer}>
         <Chart />
-      </div>
+      </section>
     </div>
   );
 };
