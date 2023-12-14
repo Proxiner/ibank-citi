@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../layout/_CardImage.module.scss'
+import styles from '../layouts/_CardImage.module.scss'
 
 function CardImageDetails({ title, numberCard, owner }) {
     return (

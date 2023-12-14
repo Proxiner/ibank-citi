@@ -2,19 +2,20 @@ import React, { useState } from "react";
 
 import styles from "./App.module.scss";
 
-import Navbar from "./layout/Navbar";
-import Sidebar from "./layout/Sidebar";
+import Navbar from "./layouts/Navbar";
+import Sidebar from "./layouts/Sidebar";
 import QuickTransfer from "./components/QuickTransfer";
 import MyCards from "./components/MyCards";
 import Search from "./components/Search";
-import PopularContacts from "./layout/PopularContacts";
-import ContactList from "./layout/ContactList";
-import frankWilliam from "./assets/frank-william.svg";
-import nickKrankston from "./assets/nick-krankston.svg";
-import johnDoe from "./assets/john-doe.svg";
-import sarahFlorance from "./assets/sarah-florance.svg";
-import CardImage from "./layout/CardImage";
-import Transactions from "./layout/Transactions";
+import PopularContacts from "./layouts/PopularContacts";
+import ContactList from "./layouts/ContactList";
+import frankWilliam from "./assets/frank-william.jpg";
+import nickKrankston from "./assets/nick-krankston.jpg";
+import johnDoe from "./assets/john-doe.jpg";
+import sarahFlorance from "./assets/sarah-florance.jpg";
+import CardImage from "./layouts/CardImage";
+import Transactions from "./layouts/Transactions";
+import Chart from "./layouts/ChartSection";
 
 const App = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -132,24 +133,24 @@ const App = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.navbarSection}>
+      <section className={styles.navbarSection}>
         <Navbar />
-      </div>
-      <div className={styles.sidebarContainer}>
+      </section>
+      <section className={styles.sidebarContainer}>
         <Sidebar className={styles.Sidebar} />
-      </div>
-      <div className={styles.cardImageSection}>
+      </section>
+      <section className={styles.cardImageSection}>
         <CardImage />
-      </div>
+      </section>
 
-      <div className={styles.transferSection}>
+      <section className={styles.transferSection}>
         <QuickTransfer className={styles.Transfer} />
-      </div>
+      </section>
 
-      <div className={styles.myCardsSection}>
+      <section className={styles.myCardsSection}>
         <MyCards />
-      </div>
-      <div className={styles.contactsSection}>
+      </section>
+      <section className={styles.contactsSection}>
         <Search
           value={searchQuery}
           placeholder="Search contacts..."
@@ -157,10 +158,13 @@ const App = () => {
         />
         <PopularContacts contacts={CONTACTS} searchQuery={searchQuery} />
         <ContactList contacts={CONTACTS} searchQuery={searchQuery} />
-      </div>
-      <div className={styles.transactionsContainer}>
+      </section>
+      <section className={styles.transactionsContainer}>
         <Transactions />
-      </div>
+      </section>
+      <section className={styles.chartContainer}>
+        <Chart />
+      </section>
     </div>
   );
 };

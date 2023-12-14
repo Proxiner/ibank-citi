@@ -1,0 +1,105 @@
+@use "../base/colors" as color;
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  font-family: 'Mulish-medium';
+  border: none;
+  border-bottom: .5px solid color.$border;
+  padding: 20px 10px;
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6px;
+    cursor: pointer;
+
+    .logoImage {
+      font-size: 30px;
+      font-weight: 600;
+      color: color.$white;
+      padding: 10px 15px;
+      border-radius: 18px;
+      background-color: color.$secendry;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .logoText {
+      font-size: 18px;
+      font-weight: 900;
+      color: color.$black;
+      font-style: italic;
+    }
+  }
+
+  .action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+
+    .input {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 6px;
+
+      .inputText {
+        width: auto;
+        height: 25px;
+        background-color: transparent;
+        border: none;
+        border-left: 1px solid color.$black;
+        padding-left: 6px;
+      }
+      .inputText::placeholder {
+        font-size: 18px;
+        font-weight: 100;
+      }
+      .inputText:focus {
+        outline: none;
+      }
+    }
+
+    .themeToggleBox {
+      width: 80px;
+      height: 43px;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgb(220, 220, 220);
+      position: relative;
+
+      .themeToggler {
+        height: 80%;
+        padding: 0 15px;
+        background: color.$white;
+        border-radius: 12px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: absolute;
+        top: 5px;
+        transition: all .2s ease-in-out;
+
+        .sun {
+          width: 30px !important;
+          height: 30px !important;
+        }
+        .moon{
+          width: 30px !important;
+          height: 30px !important;
+        }
+      }
+    }
+
+  }
+}
