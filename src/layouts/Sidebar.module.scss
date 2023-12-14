@@ -37,18 +37,10 @@ sidebar {
           fill: black;
         }
       }
-
-      li:hover {
-        .sidebarIcons:hover g path {
-          fill: #5f4efb;
-        }
-      }
-
-      li:hover::after {
-        content: "";
+      .purpleLine {
         position: absolute;
-        top: 0;
-        left: 62px;
+        top: 29.5%;
+        left: 96.5%;
         border-radius: 5px;
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
@@ -56,6 +48,12 @@ sidebar {
         height: 25px;
         background-color: #5f4efb;
         box-shadow: -2px 0px 10px #5f4efb61;
+      }
+
+      li:hover {
+        .sidebarIcons:hover g path {
+          fill: #5f4efb;
+        }
       }
     }
   }
