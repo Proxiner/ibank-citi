@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import styles from "./App.module.scss";
-
 import Navbar from "./layouts/Navbar";
 import Sidebar from "./layouts/Sidebar";
 import QuickTransfer from "./components/QuickTransfer";

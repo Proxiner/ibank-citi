@@ -6,31 +6,31 @@
 
 @font-face {
   font-family: "Mulish-medium";
-  src: url("../fonts/static/Mulish-Medium.ttf");
+  src: url("../fonts/static/Mulish-Medium.woff2");
 }
 @font-face {
   font-family: "Mulish-black";
-  src: url("../fonts/static/Mulish-Black.ttf");
+  src: url("../fonts/static/Mulish-Black.woff2");
 }
 @font-face {
   font-family: "Mulish-bold";
-  src: url("../fonts/static/Mulish-Bold.ttf");
+  src: url("../fonts/static/Mulish-Bold.woff2");
 }
 @font-face {
   font-family: "Mulish-semibold";
-  src: url("../fonts/static/Mulish-SemiBold.ttf");
+  src: url("../fonts/static/Mulish-SemiBold.woff2");
 }
 @font-face {
   font-family: "Mulish-light";
-  src: url("../fonts/static/Mulish-Light.ttf");
+  src: url("../fonts/static/Mulish-Light.woff2");
 }
 @font-face {
   font-family: "Mulish-regular";
-  src: url("../fonts/static/Mulish-Regular.ttf");
+  src: url("../fonts/static/Mulish-Regular.woff2");
 }
 @font-face {
   font-family: "Mulish-extraLight";
-  src: url(../fonts/static/Mulish-ExtraLight.ttf);
+  src: url("../fonts/static/Mulish-ExtraLight.woff2");
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,6 +1,7 @@
 @use "./base/reset";
 @use "./base/colors" as colors;
 @use "./base/fonts" as font;
+@use "../utils/mediaQueary.module.scss" as *;
 
 .container {
   display: grid;
@@ -28,6 +29,12 @@
     grid-column: 3/4;
     width: 300%;
     height: 100%;
+    @media #{$phone}{
+      grid-column: 3/4;
+      width: 280%;
+    
+      
+    }
   }
 
   .transferSection {

@@ -3,7 +3,7 @@ import styles from "./Navbar.module.scss";
 import searchIcon from "../assets/search.svg";
 import sun from "../assets/sun.svg";
 import moon from "../assets/moon.svg";
-
+import Group from "../assets/Group 1.svg"
 function Navbar() {
   const [darkModeToggler, setDarkModeToggler] = useState("4px");
 
@@ -18,6 +18,7 @@ function Navbar() {
         <h3 className={styles.logoText}>iBank Citi</h3>
       </div>
 
+
       {/* right side of navbar */}
       <div className={styles.action}>
         <form action="#">
@@ -29,6 +30,7 @@ function Navbar() {
               placeholder="Type here to search"
             />
           </div>
+
         </form>
         <div className={styles.themeToggleBox}>
           <button
@@ -44,7 +46,12 @@ function Navbar() {
           </button>
         </div>
       </div>
+      <p className={styles.sus}>this website cannot support your screen view
+       please use a device that has a bigger screen  
+       or use your daul screen of your phone
+      </p>
     </nav>
+
   );
 }
 

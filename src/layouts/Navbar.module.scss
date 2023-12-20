@@ -1,5 +1,18 @@
 @use "../base/colors" as color;
-
+@use "../../utils/mediaQueary.module.scss" as *;
+body{
+   @media #{$unsuported}{
+    
+  //  visibility: hidden;
+  
+  .sus{
+  display: none !important;
+  @media #{$unsuported}{
+    
+    visibility: visible;
+  }
+}
+}}
 nav {
   width: 100%;
   display: flex;
@@ -9,7 +22,10 @@ nav {
   font-family: 'Mulish-medium';
   border: none;
   border-bottom: .5px solid color.$border;
+
   padding: 20px 10px;
+
+
 
   .logo {
     display: flex;
@@ -56,6 +72,14 @@ nav {
         border: none;
         border-left: 1px solid color.$black;
         padding-left: 6px;
+        @media #{$tablet}{
+    
+          display: none !important;
+        }
+        @media #{$phone}{
+    
+          display: none !important;
+        }
       }
       .inputText::placeholder {
         font-size: 18px;
