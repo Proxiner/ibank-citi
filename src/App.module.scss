@@ -51,6 +51,12 @@
     grid-column: 3/4;
     width: 300%;
     height: 100%;
+    @media #{$phone}{
+      grid-column: 3/4;
+      width: 280%;
+    
+      
+    }
   }
 
   .transferSection {
