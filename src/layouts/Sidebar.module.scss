@@ -1,4 +1,5 @@
 @use "../base/colors" as color;
+@use "../utils/Mediaquery.module.scss" as *;
 
 sidebar {
   width: 7%;
@@ -11,6 +12,22 @@ sidebar {
   align-self: center;
   border-right: 0.5px solid color.$border;
   position: fixed;
+  @media #{$mobile} {
+    width: 60%;
+    height: 100vh;
+    display: none;
+  }
+  @media #{$tablet} {
+    width: 60%;
+    height: 100vh;
+    display: none;
+  }
+  @media #{$landscapeTablet} {
+    width: 60%;
+    height: 100vh;
+    display: none;
+  }
+
 
   .navigationContainer {
     display: flex;

@@ -1,4 +1,28 @@
-.container{
+@use "../utils/Mediaquery.module.scss" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 1rem;
+  box-shadow: 10px 10px 20px #88888821, -10px -10px 20px #88888821;
+  padding: 1rem;
+  border: none;
+  border-radius: 15px;
+
+  @media #{$tablet} {
+    width: 160%;
+    margin-left: -130px;
+  }
+  @media #{$landscapeTablet} {
+    width: 160%;
+    margin-left: -130px;
+  }
+
+  .contacts {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,26 +30,13 @@
     width: 100%;
     height: 100%;
     gap: 1rem;
-    box-shadow: 10px 10px 20px #88888821, -10px -10px 20px #88888821;
-    padding: 1rem;
-    border: none;
-    border-radius: 15px;
+  }
 
-    .contacts{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        gap: 1rem;
-    }
-
-    .contact{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-    }
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
 }
