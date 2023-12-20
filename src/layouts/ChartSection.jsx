@@ -13,7 +13,6 @@ function ChartSection() {
     const result = data;
     return result;
   }
-
   useEffect(() => {
     async function fetchDataAndUpdate() {
       const data = await fetchData();
@@ -33,28 +32,28 @@ function ChartSection() {
         label: "Dribbble",
         backgroundColor: "#FF075C61",
         borderColor: "rgb(255, 99, 132)",
-        data: [productsPrice[19], 0, 0, 0],
+        data: [productsPrice[0], 0, 0, 0],
         tickLength: 10,
       },
       {
         label: "Spotify",
         backgroundColor: "#1DD46061",
         borderColor: "rgb(255, 99, 132)",
-        data: [0, 100000, 197000, 30000],
+        data: [0, 100000, 0, 0],
         tickLength: 10,
       },
       {
         label: "Be",
         backgroundColor: "#9791FC61",
         borderColor: "rgb(255, 99, 132)",
-        data: [0, 100000, 197000, 30000],
+        data: [0, 0, 197000, 0],
         tickLength: 10,
       },
       {
         label: "NEM",
         backgroundColor: "#D0D61761",
         borderColor: "rgb(255, 99, 132)",
-        data: [0, 100000, 197000, 30000],
+        data: [0, 0, 0, 30000],
         tickLength: 10,
       },
     ],
