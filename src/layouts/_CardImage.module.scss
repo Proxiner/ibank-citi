@@ -10,11 +10,12 @@
     width: 600px;
     height: 500px;
   }
-  @media #{$landscapeTablet} {
-    width: 900px;
-    height: 500px;
-    margin: 0 20%;
+
+  @media #{$landscapeTablet}{
+    width: 500px;
+    height: 400px;
   }
+
 
   .swiperSlide {
     background-image: url(../assets/card-background.svg);
@@ -64,10 +65,7 @@
     @media #{$tablet} {
       font-size: 50px;
     }
-    @media #{$landscapeTablet} {
-      font-size: 60px;
-      font-weight: 500;
-    }
+
   }
 
   .details {
@@ -81,9 +79,7 @@
       @media #{$tablet} {
         font-size: 40px;
       }
-      @media #{$landscapeTablet} {
-        font-size: 50px;
-      }
+
     }
 
     .owner {
@@ -92,9 +88,7 @@
       @media #{$tablet} {
         font-size: 25px;
       }
-      @media #{$landscapeTablet} {
-        font-size: 35px;
-      }
+
     }
   }
 }
