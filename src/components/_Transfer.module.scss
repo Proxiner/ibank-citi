@@ -33,6 +33,9 @@
   @media #{$mobile} {
     width: 100%;
   } 
+  @media #{$landscapeTablet} {
+    width: 100%;
+  } 
 
   .userName {
     position: absolute;
@@ -73,10 +76,11 @@
   }
 
   @media #{$landscapeTablet} {
-    width: 180%;
-    margin-left: -100px;
+    width: 200%;
+    margin-left: 40%;
     align-items: center;
     row-gap: 34px;
+    margin-top: 100px;
   }
 
   .confirmBtn {

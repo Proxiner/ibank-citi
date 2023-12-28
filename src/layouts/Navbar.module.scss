@@ -12,7 +12,9 @@ nav {
   border-bottom: 0.5px solid color.$border;
   padding: 20px 10px;
 
-
+  @media #{$landscapeTablet}{
+    width: 100%;
+  }
 
   .logo {
     display: flex;
@@ -63,7 +65,7 @@ nav {
     
           display: none !important;
         }
-        @media #{$phone}{
+        @media #{$mobile}{
     
           display: none !important;
         }

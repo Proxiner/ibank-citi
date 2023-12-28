@@ -5,9 +5,13 @@
   width: 100%;
   height: 100%;
   @media #{$mobile} {
-    margin: 20px 0;
+    margin: 160% 0;
+    width: 120%;
   }
   @media #{$tablet} {
     margin: 20px 0;
+  }
+  @media #{$landscapeTablet} {
+    margin: 120% 30%;
   }
 }

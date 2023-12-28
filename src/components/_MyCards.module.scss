@@ -12,12 +12,14 @@
   @media #{$mobile} {
     padding: 10px;
   }
-  
+
   @media #{$tablet} {
     margin-top: 50px;
   }
   @media #{$landscapeTablet} {
-    margin-top: 50px;
+    margin-top: 100px;
+    margin-left: 30%;
+    row-gap: 28px;
   }
 
   .title {
@@ -28,8 +30,8 @@
       font-size: 30px;
     }
     @media #{$landscapeTablet} {
-        font-size: 30px;
-      }
+      font-size: 40px;
+    }
   }
 
   .availableBalance {

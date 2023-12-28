@@ -46,10 +46,6 @@ function Navbar() {
           </button>
         </div>
       </div>
-      <p className={styles.sus}>this website cannot support your screen view
-       please use a device that has a bigger screen  
-       or use your daul screen of your phone
-      </p>
     </nav>
 
   );

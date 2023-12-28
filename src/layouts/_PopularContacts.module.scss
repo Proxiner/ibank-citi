@@ -13,6 +13,13 @@
     margin-top: 50px;
     width: 120%;
   }
+  @media #{$landscapeTablet} {
+    transform: scale(1.2);
+    margin-top: 100px;
+    width: 100%;
+    margin-left: 30%;
+  }
+
 
   h2 {
     font-family: Mulish-Light;
