@@ -20,7 +20,7 @@
     background-image: url(../assets/card-background.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: color.$cardBGColor;
+    background-color: #a29bfd9e;
     display: flex;
     justify-content: space-between;
     border-radius: 30px;
@@ -29,6 +29,7 @@
     padding-top: 80px;
     color: #fff;
     position: relative;
+    backdrop-filter: blur(12px);
   }
 
   .CardImageDetailsContainer::before {
