@@ -30,10 +30,8 @@ function Navbar() {
               className={styles.inputText}
               placeholder="Type here to search"
             />
-            <img src={Group} className={styles.burger} alt="menu" />
+            {/* <img src={Group} className={styles.burger} alt="menu" /> */}
           </div>
-
-
 
         </form>
         <div className={styles.themeToggleBox}>

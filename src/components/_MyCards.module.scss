@@ -17,9 +17,8 @@
     margin-top: 50px;
   }
   @media #{$landscapeTablet} {
-    margin-top: 100px;
-    margin-left: 30%;
     row-gap: 28px;
+    margin-left: 50px;
   }
 
   .title {

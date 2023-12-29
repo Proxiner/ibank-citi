@@ -9,18 +9,14 @@
   gap: 1rem;
 
   @media #{$tablet} {
-    transform: scale(1.2);
     margin-top: 50px;
-    width: 120%;
+    width: 100%;
   }
   @media #{$landscapeTablet} {
-    transform: scale(1.2);
-    margin-top: 100px;
     width: 100%;
-    margin-left: 30%;
+    margin-left: 50px;
   }
-
-
+  
   h2 {
     font-family: Mulish-Light;
     font-size: 1.5rem;

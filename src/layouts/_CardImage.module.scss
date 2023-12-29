@@ -11,12 +11,6 @@
     height: 500px;
   }
 
-  @media #{$landscapeTablet}{
-    width: 500px;
-    height: 400px;
-  }
-
-
   .swiperSlide {
     background-image: url(../assets/card-background.svg);
     background-size: cover;

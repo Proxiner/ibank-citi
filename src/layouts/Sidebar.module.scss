@@ -1,9 +1,6 @@
 @use "../base/colors" as color;
 @use "../utils/Mediaquery.module.scss" as *;
 
-
-    
-     
 sidebar {
   width: 7%;
   height: 100%;
@@ -26,11 +23,10 @@ sidebar {
     display: none;
   }
   @media #{$landscapeTablet} {
-    width: 60%;
+    width: 100%;
     height: 100vh;
-    display: none;
+    display: flex;
   }
-
 
   .navigationContainer {
     display: flex;
