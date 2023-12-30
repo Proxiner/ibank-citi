@@ -138,10 +138,10 @@ function QuickTransfer() {
             <span>(IR)</span>
           </span>
           <form onSubmit={handleSubmit} className={styles.captchaImg}>
-            {/* <GoogleRecaptcha
+            <GoogleRecaptcha
                 ref={recaptchaRef}
                 sitekey="6LcNIigpAAAAADpeOJooOeBHhb9YrIs69KW2JjUE"
-              /> */}
+              />
             <button type="submit">Submit</button>
           </form>
         </div>
