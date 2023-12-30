@@ -10,6 +10,7 @@ function Navbar() {
   const handleClick = () => {
     setDarkModeToggler(darkModeToggler === "4px" ? "18px" : "4px");
   };
+
   return (
     <nav>
       {/* left side of navbar */}

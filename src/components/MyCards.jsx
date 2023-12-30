@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useRef } from "react";
 import styles from "./_MyCards.module.scss";
 import Deposit from "./Deposit";
 import CreditCardNumber from "./CreditCardNumber";
@@ -11,45 +11,116 @@ import "swiper/css/effect-flip";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { EffectFlip, Pagination, Navigation } from "swiper/modules";
+import { addCart } from "../App";
 
 function MyCards() {
+  const {cartMoney} = useContext(addCart)
+
+  const swiperRef = useRef(null);
+
+  const handleNextSlide = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideNext();
+    }
+  };
+
+  const handlePrevSlide = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slidePrev();
+    }
+  };
+
   return (
     <div className={styles.myCards}>
       <h1 className={styles.title}>My Cards</h1>
       <Swiper
         effect={"flip"}
         grabCursor={true}
-        pagination={false}
-        navigation={false}
         modules={[EffectFlip, Pagination, Navigation]}
         className="swiper"
-        style={{ width: "400px", height: "70px" }}
+        ref={swiperRef}
+        style={{ width: "400px", height: "70px", position: "relative" }}
       >
         <SwiperSlide>
           <CreditCardNumber
-            creditCardNumber={"5859 **** **** 2245"}
+            creditCardNumber={"5859 * * 2245"}
             imageSrc={Tejarat}
           />
         </SwiperSlide>
         <SwiperSlide>
-          <CreditCardNumber
-            creditCardNumber={"111 **** **** 111"}
-            imageSrc={Sepah}
-          />
+          <CreditCardNumber creditCardNumber={"111 * * 111"} imageSrc={Sepah} />
         </SwiperSlide>
-        <SwiperSlide>
-          <CreditCardNumber
-            creditCardNumber={"7777 **** **** 7777"}
-            imageSrc={Tejarat}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CreditCardNumber
-            creditCardNumber={"5555 **** **** 5555"}
-            imageSrc={Sepah}
-          />
-        </SwiperSlide>
-      </Swiper>{" "}
+
+        <div className={styles.control}>
+          <button onClick={handleNextSlide}>
+            <svg
+              className={styles.arrowLeft}
+              id="vuesax_outline_arrow-circle-right"
+              data-name="vuesax/outline/arrow-circle-right"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <g id="arrow-circle-right">
+                <path
+                  id="Vector"
+                  d="M10.75,21.5A10.75,10.75,0,1,1,21.5,10.75,10.759,10.759,0,0,1,10.75,21.5Zm0-20A9.25,9.25,0,1,0,20,10.75,9.261,9.261,0,0,0,10.75,1.5Z"
+                  transform="translate(1.25 1.25)"
+                  fill="#e8e8e8"
+                />
+                <path
+                  id="Vector-2"
+                  data-name="Vector"
+                  d="M.747,8.558a.742.742,0,0,1-.53-.22.754.754,0,0,1,0-1.06l3-3-3-3A.75.75,0,0,1,1.278.218l3.53,3.53a.754.754,0,0,1,0,1.06l-3.53,3.53A.742.742,0,0,1,.747,8.558Z"
+                  transform="translate(9.992 7.723)"
+                  fill="#626262"
+                />
+                <path
+                  id="Vector-3"
+                  data-name="Vector"
+                  d="M0,0H24V24H0Z"
+                  fill="none"
+                  opacity="0"
+                />
+              </g>
+            </svg>
+          </button>
+          <button onClick={handlePrevSlide}>
+            <svg
+              id="vuesax_outline_arrow-circle-right"
+              data-name="vuesax/outline/arrow-circle-right"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <g id="arrow-circle-right">
+                <path
+                  id="Vector"
+                  d="M10.75,21.5A10.75,10.75,0,1,1,21.5,10.75,10.759,10.759,0,0,1,10.75,21.5Zm0-20A9.25,9.25,0,1,0,20,10.75,9.261,9.261,0,0,0,10.75,1.5Z"
+                  transform="translate(1.25 1.25)"
+                  fill="#e8e8e8"
+                />
+                <path
+                  id="Vector-2"
+                  data-name="Vector"
+                  d="M.747,8.558a.742.742,0,0,1-.53-.22.754.754,0,0,1,0-1.06l3-3-3-3A.75.75,0,0,1,1.278.218l3.53,3.53a.754.754,0,0,1,0,1.06l-3.53,3.53A.742.742,0,0,1,.747,8.558Z"
+                  transform="translate(9.992 7.723)"
+                  fill="#626262"
+                />
+                <path
+                  id="Vector-3"
+                  data-name="Vector"
+                  d="M0,0H24V24H0Z"
+                  fill="none"
+                  opacity="0"
+                />
+              </g>
+            </svg>
+          </button>
+        </div>
+      </Swiper>
       <div className={styles.availableBalance}>
         <span>Available Balance </span>
         <ChangerBtn
@@ -82,7 +153,7 @@ function MyCards() {
         />
       </div>
       <div className={styles.money}>
-        <span>$6.293.20 (IR)</span>
+        <span>${cartMoney} (IR)</span>
         <ChangerBtn
           icon={
             <svg
