@@ -1,15 +1,21 @@
 @use "../base/colors" as color;
 @use "../base/fonts" as font;
+@use "../utils/Mediaquery.module.scss" as *;
 
 .cardImage {
   width: 400px;
   height: 300px;
 
+  @media #{$tablet} {
+    width: 600px;
+    height: 500px;
+  }
+
   .swiperSlide {
     background-image: url(../assets/card-background.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: color.$cardBGColor;
+    background-color: #a29bfd9e;
     display: flex;
     justify-content: space-between;
     border-radius: 30px;
@@ -18,6 +24,7 @@
     padding-top: 80px;
     color: #fff;
     position: relative;
+    backdrop-filter: blur(12px);
   }
 
   .CardImageDetailsContainer::before {
@@ -49,6 +56,10 @@
   h1 {
     font-size: 30px;
     font-weight: 100;
+    @media #{$tablet} {
+      font-size: 50px;
+    }
+
   }
 
   .details {
@@ -59,11 +70,19 @@
     .numberCard {
       font-size: 25px;
       font-family: "Mulish-light";
+      @media #{$tablet} {
+        font-size: 40px;
+      }
+
     }
 
     .owner {
       font-size: 16px;
       font-family: "Mulish-light";
+      @media #{$tablet} {
+        font-size: 25px;
+      }
+
     }
   }
 }

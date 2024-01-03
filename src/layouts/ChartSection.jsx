@@ -32,28 +32,28 @@ function ChartSection() {
         label: "Dribbble",
         backgroundColor: "#FF075C61",
         borderColor: "rgb(255, 99, 132)",
-        data: [productsPrice[0], 0, 0, 0],
+        data: [`${productsPrice[0] + 10000}`, 0, 0, 0],
         tickLength: 10,
       },
       {
         label: "Spotify",
         backgroundColor: "#1DD46061",
         borderColor: "rgb(255, 99, 132)",
-        data: [0, 100000, 0, 0],
+        data: [0, `${productsPrice[1] + 10000}`, 0, 0],
         tickLength: 10,
       },
       {
         label: "Be",
         backgroundColor: "#9791FC61",
         borderColor: "rgb(255, 99, 132)",
-        data: [0, 0, 197000, 0],
+        data: [0, 0, `${productsPrice[2] + 10000}`, 0],
         tickLength: 10,
       },
       {
         label: "NEM",
         backgroundColor: "#D0D61761",
         borderColor: "rgb(255, 99, 132)",
-        data: [0, 0, 0, 30000],
+        data: [0, 0, 0, `${productsPrice[3] + 10000}`],
         tickLength: 10,
       },
     ],
@@ -71,4 +71,6 @@ function ChartSection() {
   );
 }
 
-export default ChartSection;
+
+
+  export default ChartSection;

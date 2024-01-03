@@ -1,3 +1,5 @@
+@use "../utils/Mediaquery.module.scss" as *;
+
 .search {
   width: 90%;
   height: 45px;
@@ -8,6 +10,7 @@
   font-family: Mulish-Light;
   padding: 0 3rem;
   background-color: transparent;
+
 }
 
 .search:focus {
@@ -24,6 +27,9 @@
   border-radius: 13px;
   margin-bottom: 1.5rem;
 
+  @media #{$landscapeTablet} {
+    margin-left: 50px;
+  }
   img {
     width: 35px;
     height: 35px;

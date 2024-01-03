@@ -1,5 +1,9 @@
 @use "../base/colors" as color;
 @use "../base/fonts" as font;
+<<<<<<< HEAD
+=======
+@use "../utils/Mediaquery.module.scss" as *;
+>>>>>>> 4e8f2b969d306c7ac24399237e2f5b46de838483
 
 .myCards {
   width: 100%;
@@ -8,9 +12,34 @@
   flex-direction: column;
   row-gap: 18px;
 
+<<<<<<< HEAD
   .title {
     font-size: 25px;
     font-weight: bold;
+=======
+  @media #{$mobile} {
+    padding: 10px;
+  }
+
+  @media #{$tablet} {
+    margin-top: 50px;
+  }
+  @media #{$landscapeTablet} {
+    row-gap: 28px;
+    margin-left: 50px;
+  }
+
+  .title {
+    font-size: 25px;
+    font-weight: bold;
+
+    @media #{$tablet} {
+      font-size: 30px;
+    }
+    @media #{$landscapeTablet} {
+      font-size: 40px;
+    }
+>>>>>>> 4e8f2b969d306c7ac24399237e2f5b46de838483
   }
 
   .availableBalance {
@@ -47,6 +76,7 @@
   .changerBtn:hover {
     color: #8e84ff;
   }
+<<<<<<< HEAD
 }
 
 .swiper {
@@ -81,6 +111,8 @@
 
 .arrowLeft {
   transform: scale(-1);
+=======
+>>>>>>> 4e8f2b969d306c7ac24399237e2f5b46de838483
 }
 
 .deposit {
@@ -163,3 +195,27 @@
   border: none;
   outline: none;
 }
+<<<<<<< HEAD
+=======
+
+.control {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 30px;
+
+  button {
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.arrowLeft {
+  transform: rotate(180deg);
+}
+>>>>>>> 4e8f2b969d306c7ac24399237e2f5b46de838483

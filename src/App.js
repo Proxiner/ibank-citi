@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { createContext, useContext, useState } from "react";
 
 import styles from "./App.module.scss";
-
+// import styles from "./utils/Mediaquery.module.scss"
 import Navbar from "./layouts/Navbar";
 import Sidebar from "./layouts/Sidebar";
 import QuickTransfer from "./components/QuickTransfer";
@@ -17,8 +17,11 @@ import CardImage from "./layouts/CardImage";
 import Transactions from "./layouts/Transactions";
 import Chart from "./layouts/ChartSection";
 
+export const addCart = createContext("")
+
 const App = () => {
   const [searchQuery, setSearchQuery] = useState("");
+  const [cartMoney, setCartMoney] = useState(0)
 
   const CONTACTS = [
     {
@@ -130,42 +133,45 @@ const App = () => {
       showHistory: false,
     },
   ];
+  {console.log(cartMoney)}
 
   return (
-    <div className={styles.container}>
-      <section className={styles.navbarSection}>
-        <Navbar />
-      </section>
-      <section className={styles.sidebarContainer}>
-        <Sidebar className={styles.Sidebar} />
-      </section>
-      <section className={styles.cardImageSection}>
-        <CardImage />
-      </section>
+    <addCart.Provider value={{cartMoney, setCartMoney}}>
+      <div className={styles.container}>
+        <section className={styles.navbarSection}>
+          <Navbar />
+        </section>
+        <section className={styles.sidebarContainer}>
+          <Sidebar className={styles.Sidebar} />
+        </section>
+        <section className={styles.cardImageSection}>
+          <CardImage />
+        </section>
 
-      <section className={styles.transferSection}>
-        <QuickTransfer className={styles.Transfer} />
-      </section>
+        <section className={styles.transferSection}>
+          <QuickTransfer className={styles.Transfer} />
+        </section>
 
-      <section className={styles.myCardsSection}>
-        <MyCards />
-      </section>
-      <section className={styles.contactsSection}>
-        <Search
-          value={searchQuery}
-          placeholder="Search contacts..."
-          onChange={(e) => setSearchQuery(e.target.value)}
-        />
-        <PopularContacts contacts={CONTACTS} searchQuery={searchQuery} />
-        <ContactList contacts={CONTACTS} searchQuery={searchQuery} />
-      </section>
-      <section className={styles.transactionsContainer}>
-        <Transactions />
-      </section>
-      <section className={styles.chartContainer}>
-        <Chart />
-      </section>
-    </div>
+        <section className={styles.myCardsSection}>
+          <MyCards />
+        </section>
+        <section className={styles.contactsSection}>
+          <Search
+            value={searchQuery}
+            placeholder="Search contacts..."
+            onChange={(e) => setSearchQuery(e.target.value)}
+          />
+          <PopularContacts contacts={CONTACTS} searchQuery={searchQuery} />
+          <ContactList contacts={CONTACTS} searchQuery={searchQuery} />
+        </section>
+        <section className={styles.transactionsContainer}>
+          <Transactions />
+        </section>
+        <section className={styles.chartContainer}>
+          <Chart />
+        </section>
+      </div>
+    </addCart.Provider>
   );
 };
 
