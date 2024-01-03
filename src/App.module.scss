@@ -145,6 +145,8 @@
     grid-column: 3/4;
     width: 100%;
     height: 100%;
+    margin-top: 230px;
+
     @media #{$landscapeTablet} {
       grid-column: 3/3;
       grid-row: 3/4;
