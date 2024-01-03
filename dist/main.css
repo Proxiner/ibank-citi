@@ -1,17 +1,36 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 2 | @use './utils/mediaquery';
- *   | ^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   src\main.scss 2:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @use './utils/mediaquery';\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   src\\main.scss 2:1  root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+@font-face {
+  font-family: "Mulish-medium";
+  src: url("../fonts/static/Mulish-Medium.woff2");
+}
+@font-face {
+  font-family: "Mulish-black";
+  src: url("../fonts/static/Mulish-Black.woff2");
+}
+@font-face {
+  font-family: "Mulish-bold";
+  src: url("../fonts/static/Mulish-Bold.woff2");
+}
+@font-face {
+  font-family: "Mulish-semibold";
+  src: url("../fonts/static/Mulish-SemiBold.woff2");
+}
+@font-face {
+  font-family: "Mulish-light";
+  src: url("../fonts/static/Mulish-Light.woff2");
+}
+@font-face {
+  font-family: "Mulish-regular";
+  src: url("../fonts/static/Mulish-Regular.woff2");
+}
+@font-face {
+  font-family: "Mulish-extraLight";
+  src: url("../fonts/static/Mulish-ExtraLight.woff2");
+}
+
+/*# sourceMappingURL=main.css.map */
