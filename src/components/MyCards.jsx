@@ -1,29 +1,32 @@
-import React, {useRef} from "react";
+import React, { useContext, useRef } from "react";
 import styles from "./_MyCards.module.scss";
 import Deposit from "./Deposit";
 import CreditCardNumber from "./CreditCardNumber";
 import ChangerBtn from "./ChangerBtn";
 import Sepah from "../assets/bank-sepah.svg";
-import Tejarat from "../assets/Tejarat-Bank-logo.svg";
+import Tejarat from "../assets/Tejarat-Bank-logo.svg"
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-flip";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { EffectFlip, Pagination, Navigation } from "swiper/modules";
+import { addCart } from "../App";
 
 function MyCards() {
+  const {cartMoney} = useContext(addCart)
+
   const swiperRef = useRef(null);
 
   const handleNextSlide = () => {
-    if (swiperRef.current !== null && swiperRef.current.swiper !== null) {
-      swiperRef.current.swiper.slidePrev();
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideNext();
     }
   };
 
   const handlePrevSlide = () => {
-    if (swiperRef.current !== null && swiperRef.current.swiper !== null) {
-      swiperRef.current.swiper.slideNext();
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slidePrev();
     }
   };
 
@@ -166,7 +169,7 @@ function MyCards() {
         />
       </div>
       <div className={styles.money}>
-        <span>$6.293.20 (IR)</span>
+        <span>{cartMoney} (IR)</span>
         <ChangerBtn
           icon={
             <svg

@@ -1,24 +1,45 @@
-import React from "react";
+import React, { useContext, useRef } from "react";
 import styles from "./_MyCards.module.scss";
+import { addCart } from "../App";
 
 function Deposit() {
+  const inputRef = useRef();
+  const { cartMoney, setCartMoney } = useContext(addCart);
+
+  const moneySuggestionsHandler = (e) => {
+    inputRef.current.value = Number(e.target.textContent);
+  };
+
   return (
     <div className={styles.deposit}>
-      <section className={styles.inputPart}>
+      <form
+        className={styles.inputPart}
+        onSubmit={(e) => {
+          e.preventDefault();
+          setCartMoney(
+            Number(e.currentTarget.firstElementChild.value) + cartMoney
+          );
+        }}
+      >
         <input
-          type="text"
+          defaultValue={0}
+          min={0}
+          type="number"
           placeholder="100000"
+          ref={inputRef}
           className={styles.depositInput}
         />
-        <button className={styles.depositButton}>Deposit</button>
-      </section>
+        <button type="submit" className={styles.depositButton}>
+          Deposit
+        </button>
+      </form>
       <div className={styles.suggestions}>
-        <span>200,000$</span>
-        <span>1200,000$</span>
-        <span>900,000$</span>
-        <span>500,000$</span>
-        <span>100,000$</span>
-        <span>1900,000$</span>
+        <span onClick={moneySuggestionsHandler}>{200000}</span>
+        <span onClick={moneySuggestionsHandler}>{1200000}</span>
+        <span onClick={moneySuggestionsHandler}>{900000}</span>
+        <span onClick={moneySuggestionsHandler}>{500000}</span>
+        <span onClick={moneySuggestionsHandler}>{100000}</span>
+        <span onClick={moneySuggestionsHandler}>{1900000}</span>
         <button className={styles.btn}>...</button>
       </div>
     </div>
