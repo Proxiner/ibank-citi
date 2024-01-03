@@ -47,7 +47,7 @@ function QuickTransfer() {
         modules={[EffectFlip, Pagination, Navigation]}
         ref={swiperRef}
         className={styles.swiper}
-        style={{ width: "400px", height: "70px", position: 'relative' }}
+        style={{ width: "100%", height: "max-content", position: 'relative' }}
       >
         <SwiperSlide>
           <CreditCardNumber creditCardNumber={"5859 **** **** 2245"} imageSrc={Tejarat} />

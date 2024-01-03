@@ -49,6 +49,7 @@
 
   span {
     padding: 2px 50px 2px 5px;
+    font-size: 14px;
   }
 }
 
@@ -85,10 +86,9 @@
   height: 100%;
   @media #{$mobile} {
     width: 100%;
-    margin-left: -5px;
+    margin-right: 5px;
     align-items: center;
-    row-gap: 34px;
-    margin-bottom: 200px;
+    row-gap: 30px;
   }
 
   @media #{$tablet} {

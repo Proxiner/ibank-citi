@@ -13,24 +13,23 @@
   width: 100%;
   height: 100vh;
   background-color: colors.$white;
-  padding: 1rem;
+  // padding: 0 1rem;
 
   @media #{$mobile} {
     display: flex;
-    width: 100%;
-    height: 100%;
+    height: 100vh;
     // margin: 0 10%;
-    grid-template-columns: 100% 0 0 0;
+    grid-template-columns: 100%;
     grid-template-rows: 10% 60% 40% 30%;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
+    place-items: center;
   }
   @media #{$tablet} {
     display: flex;
     grid-template-columns: 100% auto auto auto;
     grid-template-rows: 10% 60% 40% 30%;
     flex-direction: column;
-    align-items: center;
     align-items: center;
   }
   @media #{$landscapeTablet} {
@@ -51,20 +50,21 @@
       grid-row: 1/4;
       grid-column: 1/2;
       width: 7%;
-      margin-top: 100px;
+      // margin-top: 100px;
     }
   }
 
   .navbarSection {
-    grid-row: 1/4;
-    grid-column: 3/4;
-    width: 300%;
+    grid-row: 1/2;
+    grid-column: 2/4;
+    width: 100%;
     height: 100%;
 
     @media #{$mobile} {
       grid-column: 4/4;
       grid-row: 1/1;
       width: 100%;
+      // transform: translate(-5%, 0);
     }
     @media #{$landscapeTablet} {
       grid-column: 1/3;
@@ -106,10 +106,11 @@
     }
 
     @media #{$mobile} {
-      width: 100%;
+      width: 90%;
       grid-column: 1/1;
       grid-row: 3/3;
-      margin: 45% auto;
+      margin-top: 50px;
+      transform: translate(-5%, 0);
     }
   }
 
@@ -138,7 +139,7 @@
       width: 100%;
       grid-column: 1/1;
       grid-row: 4/4;
-      margin-top: -100%;
+      transform: translate(-5%, 0);
     }
   }
   .contactsSection {
@@ -155,10 +156,10 @@
       margin-top: 300px;
     }
     @media #{$mobile} {
-      grid-row: 3/4;
+      grid-row: 3/5;
       grid-column: 3/4;
       width: 100%;
-      margin-top: 100px;
+      transform: translate(-5%, 0);
     }
 
     @media #{$tablet} {
@@ -177,7 +178,9 @@
 
     @media #{$mobile} {
       width: 100%;
-      height: 40%;
+      height: 100%;
+      margin: 0 auto;
+      transform: translate(-5%, 0%);
     }
 
     @media #{$landscapeTablet} {
@@ -215,6 +218,7 @@
     }
     @media #{$mobile} {
       width: 100%;
+      transform: translate(-5%, 0);
     }
   }
   .chartContainer {
@@ -224,8 +228,11 @@
     height: 100%;
     margin-bottom: 70%;
 
-    @media #{$landscapeTablet} {
+    @media #{$mobile} {
+      width: 100%;
+      margin-top: 140%;
       margin-bottom: 0;
+      transform: translate(-1%, 0);
     }
 
     @media #{$landscapeTablet} {

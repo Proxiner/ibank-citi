@@ -20,11 +20,15 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding-left: 20px;
-  font-family: 'Mulish-medium';
+  font-family: "Mulish-medium";
   border: none;
-  border-bottom: .5px solid color.$border;
+  border-bottom: 0.5px solid color.$border;
   padding: 20px 10px;
-
+  
+  @media #{$mobile} {
+    padding: 20px 0;
+    padding-left: 0;
+  }
   .logo {
     display: flex;
     justify-content: center;
@@ -109,18 +113,17 @@ nav {
         cursor: pointer;
         position: absolute;
         top: 5px;
-        transition: all .2s ease-in-out;
+        transition: all 0.2s ease-in-out;
 
         .sun {
           width: 30px !important;
           height: 30px !important;
         }
-        .moon{
+        .moon {
           width: 30px !important;
           height: 30px !important;
         }
       }
     }
-
   }
 }

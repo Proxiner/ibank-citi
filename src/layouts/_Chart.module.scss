@@ -7,8 +7,8 @@
   height: 100%;
 
   @media #{$mobile} {
-    margin: 200% -40px;
-    width: 120%;
+    margin: 0 0;
+    width: 90%;
   }
   @media #{$tablet} {
     margin: 20px 0;
