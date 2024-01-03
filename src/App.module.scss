@@ -6,7 +6,7 @@
 .container {
   display: grid;
   grid-template-columns: 6% 30% 30% 34%;
-  grid-template-rows: 10% 60% 40% 30%;
+  grid-template-rows: 10% 45% 40% 30%;
   gap: 1rem;
   font-family: "Mulish-medium";
   place-items: center;
@@ -25,28 +25,33 @@
   }
   @media #{$tablet} {
     display: flex;
-    grid-template-columns: 100% 0 0 0;
+    grid-template-columns: 100% auto auto auto;
     grid-template-rows: 10% 60% 40% 30%;
     flex-direction: column;
     align-items: center;
-    background: #000; 
+    align-items: center;
   }
   @media #{$landscapeTablet} {
-    display: flex;
-    grid-template-columns: 100% 0 0 0;
-    grid-template-rows: 10% 60% 40% 30%;
-    flex-direction: column;
+    grid-template-columns: 6% 40% 44%;
+    grid-template-rows: 10% 50% 40% 40%;
     align-items: center;
   }
 
   .sidebarContainer {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     grid-row: 1/4;
     grid-column: 1/2;
     width: 100%;
     height: 100%;
+
+    @media #{$landscapeTablet} {
+      grid-row: 1/4;
+      grid-column: 1/2;
+      width: 100%;
+      margin-top: 100px;
+    }
   }
 
   .navbarSection {
@@ -63,6 +68,24 @@
       width: 100%;
     
       
+    @media #{$mobile} {
+      grid-column: 3/4;
+      width: 100%;
+    }
+    @media #{$landscapeTablet} {
+      grid-column: 1/3;
+      grid-row: 1/2;
+      width: 205%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+    @media #{$tablet} {
+      width: 144%;
+      grid-row: 1/1;
+      grid-column: 1/1;
+      margin: 0 auto;
     }
   }
 
@@ -74,6 +97,27 @@
     grid-column: 2/3;
     width: 100%;
     height: 80%;
+
+    @media #{$landscapeTablet} {
+      grid-column: 2/3;
+      grid-row: 3/4;
+      width: 100%;
+    }
+
+    @media #{$tablet} {
+      grid-column: 1/1;
+      grid-row: 3/3;
+      width: 145%;
+      margin: 130px auto;
+    }
+
+    @media #{$mobile} {
+      width: 100%;
+      grid-column: 1/1;
+      grid-row: 3/3;
+      margin: 45% auto;
+    }
+
   }
 
   .myCardsSection {
@@ -81,24 +125,96 @@
     grid-column: 3/4;
     width: 100%;
     height: 70%;
+
+    @media #{$landscapeTablet} {
+      grid-column: 3/3;
+      grid-row: 2/3;
+      width: 100%;
+    }
+
+    @media #{$tablet} {
+      grid-column: 1/1;
+      grid-row: 4/4;
+      width: 140%;
+      margin-left: 45%;
+      margin-bottom: 100px;
+      margin-top: -500px;
+    }
+
+    @media #{$mobile} {
+      width: 100%;
+      grid-column: 1/1;
+      grid-row: 4/4;
+      margin-top: -100%;
+    }
+
   }
   .contactsSection {
     grid-row: 3/4;
     grid-column: 3/4;
     width: 100%;
     height: 100%;
+    @media #{$landscapeTablet} {
+      grid-column: 3/3;
+      grid-row: 3/4;
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 300px;
+    }
+
+    @media #{$tablet} {
+      grid-column: 1/1;
+      grid-row: 5/5;
+      width: 140%;
+      margin: 0 auto;
+      margin-left: 2%;
+    }
+
   }
   .cardImageSection {
     grid-row: 2/3;
     grid-column: 1/3;
     width: 60%;
     height: 75%;
+    @media #{$mobile} {
+      width: 100%;
+      height: 40%;
+    }
+
+    @media #{$landscapeTablet} {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      width: 100%;
+    }
+
+    @media #{$tablet} {
+      grid-column: 1/1;
+      grid-row: 2/2;
+      width: 145%;
+      margin: 0 auto;
+    }
   }
   .transactionsContainer {
     grid-row: 1/3;
     grid-column: 4/4;
     width: 80%;
     height: 40%;
+
+    @media #{$landscapeTablet} {
+      grid-column: 2/3;
+      grid-row: 4/4;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    @media #{$tablet} {
+      grid-column: 1/1;
+      grid-row: 6/6;
+      width: 140%;
+      margin: 0 auto;
+      margin-left: 2%;
+    }
+
   }
   .chartContainer {
     grid-row: 4/4;
@@ -106,5 +222,22 @@
     width: 70%;
     height: 100%;
     margin-bottom: 70%;
+
+    @media #{$landscapeTablet} {
+      grid-column: 3/3;
+      grid-row: 4/4;
+      width: 100%;
+      margin-bottom: 0;
+    }
+
+    @media #{$tablet} {
+      grid-column: 1/1;
+      grid-row: 7/7;
+      width: 100%;
+      margin: 45% auto;
+      margin-left: 20%;
+    }
+
   }
+}
 }

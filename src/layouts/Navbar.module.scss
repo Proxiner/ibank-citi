@@ -25,17 +25,9 @@ nav {
 
   padding: 20px 10px;
 
-  .burger {
-    display: none;
-    @media #{$phone} {
-      display: flex !important;
-      margin: 0 0 0 5px;
-    }
-    @media #{$tablet} {
-      display: flex !important;
-      margin: 0 0 0 5px;
-    }
-  }
+  // @media #{$landscapeTablet}{
+  //   width: 163%;
+  // }
 
   .logo {
     display: flex;
