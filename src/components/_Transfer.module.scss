@@ -51,7 +51,24 @@
     padding: 2px 50px 2px 5px;
   }
 }
+.control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  z-index: 1;
+  padding: 1.5rem;
+  position: absolute;
+  
+  svg {
+    cursor: pointer;
+  }
+}
 
+.control:nth-child(2){
+  left: 0;
+}
 .quickTransferBox {
   padding: 20px;
   display: flex;
