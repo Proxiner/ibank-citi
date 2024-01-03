@@ -221,6 +221,10 @@
     margin-bottom: 70%;
 
     @media #{$landscapeTablet} {
+      margin-bottom: 0;
+    }
+
+    @media #{$landscapeTablet} {
       grid-column: 3/3;
       grid-row: 4/4;
       width: 100%;
