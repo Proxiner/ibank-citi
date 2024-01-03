@@ -11,7 +11,6 @@ import "swiper/css/effect-flip";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { EffectFlip, Pagination, Navigation } from "swiper/modules";
-import { addCart } from "../App";
 
 function MyCards() {
   const swiperRef = useRef(null);
@@ -34,6 +33,8 @@ function MyCards() {
       <Swiper
         effect={"flip"}
         grabCursor={true}
+        pagination={false}
+        navigation={false}
         modules={[EffectFlip, Pagination, Navigation]}
         ref={swiperRef}
         className={styles.swiper}
@@ -41,12 +42,15 @@ function MyCards() {
       >
         <SwiperSlide>
           <CreditCardNumber
-            creditCardNumber={"5859 * * 2245"}
+            creditCardNumber={"5859 **** **** 2245"}
             imageSrc={Tejarat}
           />
         </SwiperSlide>
         <SwiperSlide>
-          <CreditCardNumber creditCardNumber={"111 * * 111"} imageSrc={Sepah} />
+          <CreditCardNumber
+            creditCardNumber={"111 **** **** 111"}
+            imageSrc={Sepah}
+          />
         </SwiperSlide>
         <SwiperSlide>
           <CreditCardNumber
@@ -162,7 +166,7 @@ function MyCards() {
         />
       </div>
       <div className={styles.money}>
-        {/* <span>${cartMoney} (IR)</span> */}
+        <span>$6.293.20 (IR)</span>
         <ChangerBtn
           icon={
             <svg

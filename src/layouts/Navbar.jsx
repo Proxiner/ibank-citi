@@ -3,14 +3,13 @@ import styles from "./Navbar.module.scss";
 import searchIcon from "../assets/search.svg";
 import sun from "../assets/sun.svg";
 import moon from "../assets/moon.svg";
-import Group from "../assets/Group 1.svg"
+
 function Navbar() {
   const [darkModeToggler, setDarkModeToggler] = useState("4px");
 
   const handleClick = () => {
     setDarkModeToggler(darkModeToggler === "4px" ? "18px" : "4px");
   };
-
   return (
     <nav>
       {/* left side of navbar */}
@@ -18,8 +17,6 @@ function Navbar() {
         <h1 className={styles.logoImage}>B</h1>
         <h3 className={styles.logoText}>iBank Citi</h3>
       </div>
-
-
 
       {/* right side of navbar */}
       <div className={styles.action}>
@@ -31,9 +28,7 @@ function Navbar() {
               className={styles.inputText}
               placeholder="Type here to search"
             />
-            {/* <img src={Group} className={styles.burger} alt="menu" /> */}
           </div>
-
         </form>
         <div className={styles.themeToggleBox}>
           <button
@@ -50,7 +45,6 @@ function Navbar() {
         </div>
       </div>
     </nav>
-
   );
 }
 
