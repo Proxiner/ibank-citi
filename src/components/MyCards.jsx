@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import React, {useRef} from "react";
-=======
-import React, { useContext, useRef } from "react";
->>>>>>> 4e8f2b969d306c7ac24399237e2f5b46de838483
 import styles from "./_MyCards.module.scss";
 import Deposit from "./Deposit";
 import CreditCardNumber from "./CreditCardNumber";
@@ -18,7 +14,6 @@ import { EffectFlip, Pagination, Navigation } from "swiper/modules";
 import { addCart } from "../App";
 
 function MyCards() {
-<<<<<<< HEAD
   const swiperRef = useRef(null);
 
   const handleNextSlide = () => {
@@ -29,27 +24,10 @@ function MyCards() {
 
   const handlePrevSlide = () => {
     if (swiperRef.current !== null && swiperRef.current.swiper !== null) {
-=======
-  const {cartMoney} = useContext(addCart)
-
-  const swiperRef = useRef(null);
-
-  const handleNextSlide = () => {
-    if (swiperRef.current && swiperRef.current.swiper) {
->>>>>>> 4e8f2b969d306c7ac24399237e2f5b46de838483
       swiperRef.current.swiper.slideNext();
     }
   };
 
-<<<<<<< HEAD
-=======
-  const handlePrevSlide = () => {
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slidePrev();
-    }
-  };
-
->>>>>>> 4e8f2b969d306c7ac24399237e2f5b46de838483
   return (
     <div className={styles.myCards}>
       <h1 className={styles.title}>My Cards</h1>
@@ -57,15 +35,9 @@ function MyCards() {
         effect={"flip"}
         grabCursor={true}
         modules={[EffectFlip, Pagination, Navigation]}
-<<<<<<< HEAD
         ref={swiperRef}
         className={styles.swiper}
         style={{ width: "400px", height: "70px" }}
-=======
-        className="swiper"
-        ref={swiperRef}
-        style={{ width: "400px", height: "70px", position: "relative" }}
->>>>>>> 4e8f2b969d306c7ac24399237e2f5b46de838483
       >
         <SwiperSlide>
           <CreditCardNumber
@@ -76,7 +48,6 @@ function MyCards() {
         <SwiperSlide>
           <CreditCardNumber creditCardNumber={"111 * * 111"} imageSrc={Sepah} />
         </SwiperSlide>
-<<<<<<< HEAD
         <SwiperSlide>
           <CreditCardNumber
             creditCardNumber={"7777 **** **** 7777"}
@@ -91,11 +62,6 @@ function MyCards() {
         </SwiperSlide>
 
           <button onClick={handlePrevSlide} className={styles.control}>
-=======
-
-        <div className={styles.control}>
-          <button onClick={handleNextSlide}>
->>>>>>> 4e8f2b969d306c7ac24399237e2f5b46de838483
             <svg
               className={styles.arrowLeft}
               id="vuesax_outline_arrow-circle-right"
@@ -129,11 +95,7 @@ function MyCards() {
               </g>
             </svg>
           </button>
-<<<<<<< HEAD
           <button onClick={handleNextSlide} className={styles.control}>
-=======
-          <button onClick={handlePrevSlide}>
->>>>>>> 4e8f2b969d306c7ac24399237e2f5b46de838483
             <svg
               id="vuesax_outline_arrow-circle-right"
               data-name="vuesax/outline/arrow-circle-right"
@@ -166,13 +128,8 @@ function MyCards() {
               </g>
             </svg>
           </button>
-<<<<<<< HEAD
       </Swiper>
 
-=======
-        </div>
-      </Swiper>
->>>>>>> 4e8f2b969d306c7ac24399237e2f5b46de838483
       <div className={styles.availableBalance}>
         <span>Available Balance </span>
         <ChangerBtn
@@ -205,7 +162,7 @@ function MyCards() {
         />
       </div>
       <div className={styles.money}>
-        <span>${cartMoney} (IR)</span>
+        {/* <span>${cartMoney} (IR)</span> */}
         <ChangerBtn
           icon={
             <svg
