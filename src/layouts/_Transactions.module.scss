@@ -1,5 +1,5 @@
 @use "../base/colors" as color;
-@use "../utils/Mediaquery.module.scss" as *;
+@use "../utils/MediaQueary.module" as *;
 .transactions {
   width: 100%;
   display: flex;

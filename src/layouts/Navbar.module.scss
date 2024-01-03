@@ -1,5 +1,5 @@
 @use "../base/colors" as color;
-@use "../../utils/mediaQueary.module.scss" as *;
+@use "../utils/MediaQueary.module" as *;
 body {
   @media #{$unsuported} {
     display: none;

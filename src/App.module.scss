@@ -1,7 +1,7 @@
 @use "./base/reset";
 @use "./base/colors" as colors;
 @use "./base/fonts" as font;
-@use "./utils/Mediaquery.module.scss" as *;
+@use "./utils/MediaQueary.module" as *;
 .container {
   display: grid;
   grid-template-columns: 6% 30% 30% 34%;

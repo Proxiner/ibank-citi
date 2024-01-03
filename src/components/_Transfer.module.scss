@@ -1,6 +1,6 @@
 @use "../base/colors" as color;
 @use "../base/fonts" as font;
-@use "../utils/Mediaquery.module.scss" as *;
+@use "../utils/MediaQueary.module" as *;
 
 .Title {
   display: flex;
