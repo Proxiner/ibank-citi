@@ -1,5 +1,5 @@
 @use "../base/colors" as color;
-
+@use "../utils/Mediaquery.module.scss" as *;
 .transactions {
   width: 100%;
   display: flex;
@@ -7,6 +7,20 @@
   justify-content: space-between;
   align-items: flex-start;
   row-gap: 10px;
+  @media #{$mobile} {
+    width: 100%;
+    margin-top: 370px;
+    margin-right: 100px;
+  }
+
+  @media #{$tablet} {
+    width: 100%;
+    margin-top: 370px;
+    margin-right: 350px;
+  }
+  @media #{$landscapeTablet} {
+    width: 100%;
+  }
 
   .title {
     font-size: 18px;

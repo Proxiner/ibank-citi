@@ -1,5 +1,6 @@
 @use "../base/colors" as color;
 @use "../base/fonts" as font;
+@use "../utils/Mediaquery.module.scss" as *;
 
 .myCards {
   width: 100%;
@@ -8,9 +9,28 @@
   flex-direction: column;
   row-gap: 18px;
 
+  @media #{$mobile} {
+    padding: 10px;
+    margin-top: 200px;
+  }
+
+  @media #{$tablet} {
+    margin-top: 50px;
+  }
+  @media #{$landscapeTablet} {
+    row-gap: 28px;
+    margin-left: 50px;
+  }
   .title {
     font-size: 25px;
     font-weight: bold;
+
+    @media #{$tablet} {
+      font-size: 30px;
+    }
+    @media #{$landscapeTablet} {
+      font-size: 40px;
+    }
   }
 
   .availableBalance {

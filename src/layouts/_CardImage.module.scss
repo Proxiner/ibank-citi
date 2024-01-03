@@ -1,10 +1,19 @@
 @use "../base/colors" as color;
 @use "../base/fonts" as font;
+@use "../utils/Mediaquery.module.scss" as *;
 
 .cardImage {
   width: 400px;
   height: 300px;
-
+  @media #{$tablet} {
+    width: 600px;
+    height: 500px;
+  }
+  @media #{$mobile} {
+    width: 380px;
+    height: 300px;
+    margin: 0 -10%;
+  }
   .swiperSlide {
     background-image: url(../assets/card-background.svg);
     background-size: cover;
@@ -50,6 +59,9 @@
   h1 {
     font-size: 30px;
     font-weight: 100;
+    @media #{$tablet} {
+      font-size: 50px;
+    }
   }
 
   .details {
@@ -60,11 +72,17 @@
     .numberCard {
       font-size: 25px;
       font-family: "Mulish-light";
+      @media #{$tablet} {
+        font-size: 40px;
+      }
     }
 
     .owner {
       font-size: 16px;
       font-family: "Mulish-light";
+      @media #{$tablet} {
+        font-size: 25px;
+      }
     }
   }
 }
