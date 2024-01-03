@@ -59,10 +59,16 @@
     grid-column: 3/4;
     width: 300%;
     height: 100%;
-    @media #{$mobile} {
-      grid-column: 3/4;
+    @media #{$mobile}{
+      grid-column: 4/4;
       width: 100%;
     }
+    @media #{$landscapeTablet}{
+      grid-column: 3/3;
+      width: 100%;
+    
+      
+
     @media #{$landscapeTablet} {
       grid-column: 1/3;
       grid-row: 1/2;
@@ -232,4 +238,5 @@
     }
 
   }
+}
 }
