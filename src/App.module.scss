@@ -21,6 +21,7 @@
     grid-template-rows: 10% 60% 40% 30%;
     flex-direction: column;
     place-items: center;
+    padding: 1rem;
   }
 
   @media #{$tablet} {
