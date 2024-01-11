@@ -143,7 +143,7 @@ function QuickTransfer() {
       </div>
 
       <div className="cardboxContiner">
-        <div className={styles.cardBox}>
+        <div className={styles.cardBox} style={{display: 'flex', flexDirection: 'column'}}>
           <span className={styles.captchaTitle}>
             300,000
             <span>(IR)</span>
@@ -152,6 +152,7 @@ function QuickTransfer() {
            <GoogleRecaptcha
                 ref={recaptchaRef}
                 sitekey="6LdoUMMoAAAAAPZElFATmjJzyzaGJiFmvSaTCdM1"
+                className={styles.captcha}
               /> 
             <button type="submit">Submit</button>
           </form>
