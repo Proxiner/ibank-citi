@@ -16,7 +16,7 @@ function ChartSection() {
   useEffect(() => {
     async function fetchDataAndUpdate() {
       const data = await fetchData();
-      const products = data.products.map((product) => product.price);
+    const products = data.products.map((product) => product.price * 1000);
       setProductPrice(products);
       return data;
     }
@@ -39,21 +39,21 @@ function ChartSection() {
         label: "Spotify",
         backgroundColor: "#1DD46061",
         borderColor: "rgb(255, 99, 132)",
-        data: [0, 100000, 0, 0],
+        data: [0, productsPrice[1],0, 0],
         tickLength: 10,
       },
       {
         label: "Be",
         backgroundColor: "#9791FC61",
         borderColor: "rgb(255, 99, 132)",
-        data: [0, 0, 197000, 0],
+        data: [0,0, productsPrice[2], 0],
         tickLength: 10,
       },
       {
         label: "NEM",
         backgroundColor: "#D0D61761",
         borderColor: "rgb(255, 99, 132)",
-        data: [0, 0, 0, 30000],
+        data: [0, 0, 0,productsPrice[3]],
         tickLength: 10,
       },
     ],
