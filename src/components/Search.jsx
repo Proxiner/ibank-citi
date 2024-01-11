@@ -18,7 +18,7 @@ const Search = ({ value, placeholder, onChange }) => {
         value={value}
         onChange={onChange}
       />
-      <img alt="Filter Icon" src={filterIcon} onMouseEnter={()=> setIsFilterOpen(true)} onMouseLeave={()=> setIsFilterOpen(false)} />
+      <img alt="Filter Icon" style={{width: "30px"}} src={filterIcon} onMouseEnter={()=> setIsFilterOpen(true)} onMouseLeave={()=> setIsFilterOpen(false)} />
       {isFilterOpen && (
         <div className={styles.filterBox} onMouseEnter={()=> setIsFilterOpen(true)} onMouseLeave={()=> setIsFilterOpen(false)}>
           <button className={styles.filterBtn}>
