@@ -2,13 +2,14 @@
 @use "../utils/MediaQueary.module" as *;
 
 .sidebar{
-  width: 7%;
+  width: 6%;
   background: #ffffff;
   box-shadow: 10px 10px 20px #8888881d;
   position: fixed;
   padding: 20px 0;
   border-radius: 0 20px 20px 0;
   border: 0.5px solid color.$border;
+  top: 30%;
 }
 .sidebarElements {
   width: 100%;

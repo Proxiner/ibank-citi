@@ -158,7 +158,7 @@ function QuickTransfer() {
         </div>
       </div>
       <button type="button" className={styles.confirmBtn}>
-        Confirm Trasnfer
+        Confirm Transfer
       </button>
     </div>
   );
