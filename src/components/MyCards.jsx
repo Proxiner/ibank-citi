@@ -169,7 +169,7 @@ function MyCards() {
         />
       </div>
       <div className={styles.money}>
-        <span>{cartMoney} (IR)</span>
+      <span> {cartMoney.toLocaleString('en-US', { maximumFractionDigits: 0 })} (IR)</span>
         <ChangerBtn
           icon={
             <svg

@@ -7,7 +7,8 @@ function Deposit() {
   const { cartMoney, setCartMoney } = useContext(addCart);
 
   const moneySuggestionsHandler = (e) => {
-    inputRef.current.value = Number(e.target.textContent);
+    let price = Number(e.target.textContent);
+    inputRef.current.value = price;
   };
 
   return (
