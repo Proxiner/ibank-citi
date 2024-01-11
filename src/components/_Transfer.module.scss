@@ -35,6 +35,9 @@
   @media #{$landscapeTablet} {
     width: 100%;
   }
+  @media #{$tablet} {
+    width: 100%;
+  }
 
   .userName {
     position: absolute;
