@@ -20,7 +20,7 @@ function Sidebar() {
   };
 
   return (
-    <sidebar>
+    <div className={styles.sidebar}>
       <div className={styles.navigationContainer}>
         <ul className={styles.sidebarNavigation}>
           <div className={styles.purpleLine} style={{transition: "all 0.2s ease-in-out"}} ref={defaultActivedLi}></div>
@@ -189,7 +189,7 @@ function Sidebar() {
           <img src={settingIcon} alt="Setting Icon" />
         </button>
       </div>
-    </sidebar>
+    </div>
   );
 }
 

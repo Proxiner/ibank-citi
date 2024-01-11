@@ -1,6 +1,6 @@
 @use "../base/colors" as color;
 @use "../utils/MediaQueary.module" as *;
-sidebar {
+.sidebar {
   width: 7%;
   height: 100%;
   color: black;

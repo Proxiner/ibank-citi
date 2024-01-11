@@ -24,6 +24,7 @@ nav {
   border-bottom: 0.5px solid color.$border;
   padding: 20px 0;
   position: relative;
+  right: 30px;
 
   @media #{$mobile} {
     padding: 20px 0;
