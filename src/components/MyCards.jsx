@@ -41,7 +41,7 @@ function MyCards() {
         modules={[EffectFlip, Pagination, Navigation]}
         ref={swiperRef}
         className={styles.swiper}
-        style={{ width: "400px", height: "70px" }}
+        style={{ width: "90%", height: "70px" }}
       >
         <SwiperSlide>
           <CreditCardNumber

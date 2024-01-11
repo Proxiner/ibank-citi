@@ -18,9 +18,9 @@ const Search = ({ value, placeholder, onChange }) => {
         value={value}
         onChange={onChange}
       />
-      <img alt="Filter Icon" src={filterIcon} onClick={handleClick} />
+      <img alt="Filter Icon" src={filterIcon} onMouseEnter={()=> setIsFilterOpen(true)} onMouseLeave={()=> setIsFilterOpen(false)} />
       {isFilterOpen && (
-        <div className={styles.filterBox}>
+        <div className={styles.filterBox} onMouseEnter={()=> setIsFilterOpen(true)} onMouseLeave={()=> setIsFilterOpen(false)}>
           <button className={styles.filterBtn}>
             Sort by Name
             <svg
