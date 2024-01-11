@@ -16,7 +16,7 @@ function ChartSection() {
   useEffect(() => {
     async function fetchDataAndUpdate() {
       const data = await fetchData();
-      const products = data.products.map((product) => product.price + '00');
+      const products = data.products.map((product) => product.price + "00");
       setProductPrice(products);
       return data;
     }

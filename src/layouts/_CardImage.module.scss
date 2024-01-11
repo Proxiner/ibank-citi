@@ -10,9 +10,8 @@
     height: 500px;
   }
   @media #{$mobile} {
-    width: 380px;
+    width: 340px;
     height: 300px;
-    margin: 0 -10%;
   }
   .swiperSlide {
     background-image: url(../assets/card-background.svg);
@@ -29,7 +28,7 @@
     position: relative;
     backdrop-filter: blur(9px);
   }
-
+  
   .CardImageDetailsContainer::before {
     content: "";
     position: absolute;
