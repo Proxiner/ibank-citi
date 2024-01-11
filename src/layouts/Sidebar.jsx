@@ -6,16 +6,16 @@ function Sidebar() {
   const defaultActivedLi = useRef();
 
   const hoverHandlerOne = () => {
-    defaultActivedLi.current.style.top = "29.5%";
+    defaultActivedLi.current.style.top = "6%";
   };
   const hoverHandlerTwo = () => {
-    defaultActivedLi.current.style.top = "39%";
+    defaultActivedLi.current.style.top = "25%";
   };
   const hoverHandlerThree = () => {
-    defaultActivedLi.current.style.top = "48.3%";
+    defaultActivedLi.current.style.top = "43%";
   };
   const hoverHandlerFour = () => {
-    defaultActivedLi.current.style.top = "58%";
+    defaultActivedLi.current.style.top = "62%";
   };
 
   return (
