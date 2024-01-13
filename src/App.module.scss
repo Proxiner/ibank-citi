@@ -22,6 +22,7 @@
     flex-direction: column;
     place-items: center;
     padding: 1rem;
+    overflow-x: hidden;
   }
 
   @media #{$tablet} {
@@ -33,7 +34,7 @@
   }
 
   @media #{$landscapeTablet} {
-    grid-template-columns: 6% 40% 44%;
+    grid-template-columns: 8% 40% 44%;
     grid-template-rows: 10% 50% 40% 40%;
     align-items: center;
   }
@@ -49,7 +50,7 @@
     @media #{$landscapeTablet} {
       grid-row: 2/4;
       grid-column: 1/2;
-      width: 7%;
+      width: 100%;
     }
   }
 
@@ -75,10 +76,9 @@
       margin: 0 auto;
     }
     @media #{$tablet} {
-      width: 144%;
+      width: 100%;
       grid-row: 1/1;
-      grid-column: 1/1;
-      margin: 0 auto;
+      grid-column: 4/4;
     }
   }
 
@@ -103,7 +103,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      transform: translate(20%, 0);
       margin-top: 100px;
     }
 
@@ -130,7 +129,6 @@
     @media #{$tablet} {
       grid-column: 1/1;
       grid-row: 4/4;
-      transform: translate(20%, 0);
       width: 100%;
     }
 
@@ -162,7 +160,6 @@
     @media #{$tablet} {
       grid-column: 1/1;
       grid-row: 5/5;
-      transform: translate(20%, 0);
       margin-top: 100px;
     }
   }
@@ -187,7 +184,7 @@
     @media #{$tablet} {
       grid-column: 1/1;
       grid-row: 2/2;
-      width: 145%;
+      width: 100%;
       margin: 0 auto;
     }
   }
@@ -208,7 +205,6 @@
       grid-column: 1/1;
       grid-row: 6/6;
       width: 100%;
-      transform: translate(20%, 0);
     }
     @media #{$mobile} {
       width: 100%;
@@ -243,7 +239,6 @@
       grid-column: 1/1;
       grid-row: 7/7;
       width: 100%;
-      transform: translate(20%, 0);
       margin-top: 300px;
     }
   }

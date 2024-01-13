@@ -1,7 +1,7 @@
 @use "../base/colors" as color;
 @use "../utils/MediaQueary.module" as *;
 
-.sidebar{
+.sidebar {
   width: 6%;
   background: #ffffff;
   box-shadow: 10px 10px 20px #8888881d;
@@ -14,6 +14,18 @@
     width: 60%;
     height: 100vh;
     display: none;
+  }
+  @media #{$tablet} {
+    width: 60%;
+    height: 100vh;
+    display: none;
+  }
+  @media #{$landscapeTablet} {
+    width: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 50px 0;
   }
 }
 .sidebarElements {
@@ -29,17 +41,17 @@
 
   @media #{$mobile} {
     width: 60%;
-    height: 100vh;
+    height: 100%;
     display: none;
   }
   @media #{$tablet} {
     width: 60%;
-    height: 100vh;
+    height: 100%;
     display: none;
   }
   @media #{$landscapeTablet} {
     width: 10%;
-    height: 100vh;
+    height: 100%;
     margin-top: 100px;
     display: flex;
   }
@@ -81,6 +93,9 @@
       height: 25px;
       background-color: #5f4efb;
       box-shadow: -2px 0px 10px #5f4efb61;
+      @media #{$landscapeTablet} {
+        top: 22%;
+      }
     }
 
     li:hover {
