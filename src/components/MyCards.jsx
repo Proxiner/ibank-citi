@@ -11,7 +11,7 @@ import "swiper/css/effect-flip";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { EffectFlip, Pagination, Navigation } from "swiper/modules";
-import { addCart } from "../App";
+import { addCart } from "../pages/Home";
 
 function MyCards() {
   const {cartMoney} = useContext(addCart)

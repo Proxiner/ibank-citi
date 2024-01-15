@@ -1,6 +1,6 @@
 import React, { useContext, useRef } from "react";
 import styles from "./_MyCards.module.scss";
-import { addCart } from "../App";
+import { addCart } from "../pages/Home";
 
 function Deposit() {
   const inputRef = useRef();

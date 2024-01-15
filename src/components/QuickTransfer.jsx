@@ -37,7 +37,7 @@ function QuickTransfer() {
 
 
   return (
-    <div className={styles.quickTransferBox}>
+    <form onSubmit={handleSubmit} className={styles.quickTransferBox}>
       <h1 className={styles.Title}>Quick Money Transfer</h1>
       <Swiper
         effect={"flip"}
@@ -148,20 +148,17 @@ function QuickTransfer() {
             300,000
             <span>(IR)</span>
           </span>
-          <form onSubmit={handleSubmit} className={styles.captchaImg}>
            <GoogleRecaptcha
                 ref={recaptchaRef}
                 sitekey="6LdoUMMoAAAAAPZElFATmjJzyzaGJiFmvSaTCdM1"
                 className={styles.captcha}
               /> 
-            <button type="submit">Submit</button>
-          </form>
         </div>
       </div>
-      <button type="button" className={styles.confirmBtn}>
+      <button type="submit" className={styles.confirmBtn}>
         Confirm Transfer
       </button>
-    </div>
+    </form>
   );
 }
 
