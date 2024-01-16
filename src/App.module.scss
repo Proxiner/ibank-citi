@@ -55,9 +55,15 @@
     align-items: center;
     row-gap: 30px;
     box-shadow: 0 0 30px #88888829;
+    @media #{$mobile} {
+      width: 340px;
+    }
 
     img {
       width: 300px;
+      @media #{$mobile} {
+        width: 200px;
+      }
     }
 
     div {
