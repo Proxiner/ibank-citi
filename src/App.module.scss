@@ -102,13 +102,11 @@
       align-items: center;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
-      .buttonLink {
         font-size: 18px;
         font-weight: 700;
         letter-spacing: 1px;
         color: colors.$white;
         text-decoration: solid;
-      }
     }
     button:hover {
       background-color: #544bcf;
