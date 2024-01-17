@@ -35,7 +35,7 @@ function Login() {
         <div>
           <label htmlFor="">Password</label>
           <input
-            type="text"
+            type="password"
             placeholder="drp12345...."
             value={password}
             onChange={(e) => setPassword(e.target.value)}
