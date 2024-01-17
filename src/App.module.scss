@@ -142,6 +142,7 @@
     grid-template-rows: 10% 60% 70% 50% 70% 40% 40%;
     flex-direction: column;
     align-items: center;
+    padding: 1rem;
   }
 
   @media #{$landscapeTablet} {
@@ -307,7 +308,7 @@
 
     @media #{$landscapeTablet} {
       grid-column: 2/3;
-      grid-row: 4/4;
+      grid-row: 5/5;
       width: 100%;
       margin: 0 auto;
     }

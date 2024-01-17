@@ -23,13 +23,15 @@ function QuickTransfer() {
   
   const swiperRef = useRef(null);
 
-  const handleNextSlide = () => {
+  const handleNextSlide = (e) => {
+    e.preventDefault()
     if (swiperRef.current && swiperRef.current.swiper) {
       swiperRef.current.swiper.slideNext();
     }
   };
 
-  const handlePrevSlide = () => {
+  const handlePrevSlide = (e) => {
+    e.preventDefault()
     if (swiperRef.current && swiperRef.current.swiper) {
       swiperRef.current.swiper.slidePrev();
     }
