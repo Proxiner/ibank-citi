@@ -20,6 +20,10 @@
     row-gap: 28px;
     margin-left: 50px;
   }
+
+  .darkMode {
+    color: white;
+  }
   .title {
     font-size: 25px;
     font-weight: bold;
@@ -39,6 +43,9 @@
     font-size: 16px;
     font-weight: 300;
     padding-right: 14px;
+    .darkMode {
+      color: white;
+    }
   }
 
   .money {
@@ -84,17 +91,17 @@
   z-index: 1;
   padding: 1.5rem;
   position: absolute;
-  
+
   svg {
     cursor: pointer;
   }
 }
 
-.control:nth-child(2){
+.control:nth-child(2) {
   left: 0;
 }
 
-.control:nth-child(3){
+.control:nth-child(3) {
   right: 0;
 }
 
@@ -102,18 +109,22 @@
   transform: scale(-1);
 }
 
-.deposit {
-  width: 100%;
-  background: #5d72fb1c;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  border-radius: 10px;
-  row-gap: 20px;
+.depositContainer {
+  .deposit {
+    width: 100%;
+    background: #5d72fb1c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    row-gap: 20px;
+  }
+  .darkMode {
+    background-color: #404040 !important;
+  }
 }
-
 .suggestions {
   display: flex;
   justify-content: space-between;
@@ -122,6 +133,13 @@
   row-gap: 7px;
   column-gap: 7px;
 
+  .darkMode {
+    background-color: #968df68d !important;
+  }
+  .darkMode:hover{
+    color: white !important;
+    background-color: #7e74f58d !important;
+  }
   span {
     background: #685dfb3d;
     color: #685dfbb0;
@@ -155,15 +173,17 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-}
-
-.depositInput {
-  width: 180px;
-  height: 50px;
-  border: none;
-  border-radius: 15px;
-  padding: 10px;
-  font-family: "Mulish-medium";
+  .darkMode{
+    background-color: #717171 !important;
+  }
+  .depositInput {
+    width: 180px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    font-family: "Mulish-medium";
+  }
 }
 
 .depositButton {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styles from "../App.module.scss";
 import LoginIllustration from "../assets/loginIlustration.png";
 
@@ -9,7 +9,7 @@ function Login({homeUrl}) {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    if ((username === "ibankciti", password === "ibank1234")) {
+    if (username === "ibankciti" && password === "ibank1234") {
       setValidationStatus(true);
       setTimeout(handelRedirect, 600);
     } else {

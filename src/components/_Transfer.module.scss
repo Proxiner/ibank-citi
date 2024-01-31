@@ -5,20 +5,32 @@
 .Title {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  font-size: 18px;
-  font-family: "Mulish-black";
   width: 100%;
   height: max-content;
 
-  @media #{$tablet} {
-    font-size: 30px;
+  .darkMode{
+    color: white !important;
+    background-color: transparent !important;
   }
-  @media #{$landscapeTablet} {
-    font-size: 30px;
+  span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+    font-family: "Mulish-black";
+
+    @media #{$tablet} {
+      font-size: 30px;
+    }
+    @media #{$landscapeTablet} {
+      font-size: 30px;
+    }
   }
 }
 
+.darkMode {
+  background-color: #444444 !important;
+}
 .cardBox {
   display: flex;
   justify-content: center;
@@ -52,7 +64,9 @@
     font-size: 14px;
     box-shadow: 10px 10px 20px #8888881d;
   }
-
+  .darkMode {
+    color: #fff !important;
+  }
   span {
     padding: 2px 50px 2px 5px;
     font-size: 14px;

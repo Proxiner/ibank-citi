@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useState, useEffect } from "react";
 import Navbar from "../layouts/Navbar";
 import Sidebar from "../layouts/Sidebar";
 import QuickTransfer from "../components/QuickTransfer";
@@ -18,7 +18,6 @@ import styles from "../App.module.scss";
 export const addCart = createContext("");
 
 function Home() {
-
   const [searchQuery, setSearchQuery] = useState("");
   const [cartMoney, setCartMoney] = useState(0);
 
@@ -133,9 +132,30 @@ function Home() {
     },
   ];
 
+  const [darkMode, setDarkMode] = useState(
+    JSON.parse(localStorage.getItem("DARK_MODE"))
+  );
+
+  const handleModeChange = () => {
+    setDarkMode(!darkMode);
+    localStorage.setItem("DARK_MODE", !darkMode);
+  };
+
+  useEffect(() => {
+    darkMode
+      ? (document.body.classList = "App_darkMode__jqoHn")
+      : (document.body.classList = "");
+  }, [darkMode]);
+
   return (
-    <addCart.Provider value={{ cartMoney, setCartMoney }}>
-      <div className={styles.container}>
+    <addCart.Provider
+      value={{ cartMoney, setCartMoney, handleModeChange, darkMode }}
+    >
+      <div
+        className={`${styles.container} ${
+          darkMode ? "App_darkMode__jqoHn" : ""
+        }`}
+      >
         <section className={styles.navbarSection}>
           <Navbar />
         </section>

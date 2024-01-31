@@ -37,13 +37,14 @@ nav {
   @media #{$landscapeTablet} {
     right: 0;
   }
+
   .logo {
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 6px;
     cursor: pointer;
-
+    
     .logoImage {
       font-size: 30px;
       font-weight: 600;
@@ -60,6 +61,9 @@ nav {
       font-weight: 900;
       color: color.$black;
       font-style: italic;
+    }
+    .darkMode{
+      color: rgb(229, 229, 229) !important;
     }
   }
 
@@ -90,6 +94,13 @@ nav {
           display: none !important;
         }
       }
+      .darkMode{
+        border-left-color: white;
+        background-color: transparent !important;
+      }
+      .darkMode::placeholder{
+        color: rgb(212, 212, 212) !important;
+      }
       .inputText::placeholder {
         font-size: 18px;
         font-weight: 100;
@@ -99,6 +110,9 @@ nav {
       }
     }
 
+    .darkMode{
+      background-color: rgb(72, 72, 72) !important;
+    }
     .themeToggleBox {
       width: 80px;
       height: 43px;
@@ -108,7 +122,9 @@ nav {
       align-items: center;
       background: rgb(220, 220, 220);
       position: relative;
-
+      .darkMode{
+        background-color: rgb(181, 181, 181) !important;
+      }
       .themeToggler {
         height: 80%;
         padding: 0 15px;
@@ -121,7 +137,7 @@ nav {
         cursor: pointer;
         position: absolute;
         top: 5px;
-        transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;        
 
         .sun {
           width: 30px !important;
