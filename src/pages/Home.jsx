@@ -18,7 +18,13 @@ import styles from "../App.module.scss";
 export const addCart = createContext("");
 
 function Home() {
-
+const handleRemeber =()=>{
+  if (localStorage.getItem('isValid')!== true){
+    if(sessionStorage.getItem('isValid')=== null){
+window.location.href='/'
+    }
+  }
+}
   const [searchQuery, setSearchQuery] = useState("");
   const [cartMoney, setCartMoney] = useState(0);
 

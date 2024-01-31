@@ -1,17 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import styles from "../App.module.scss";
 import LoginIllustration from "../assets/loginIlustration.png";
 
-function Login({homeUrl}) {
+function Login({ homeUrl }) {
   const [validationStatus, setValidationStatus] = useState();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+
+  const checkbox = useRef();
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     if ((username === "ibankciti", password === "ibank1234")) {
       setValidationStatus(true);
       setTimeout(handelRedirect, 600);
+      sessionStorage.setItem("isValid", true);
+      if (checkbox.current.checked === true) {
+        localStorage.setItem("isValid", true);
+      }
     } else {
       setValidationStatus(false);
     }
@@ -19,6 +26,15 @@ function Login({homeUrl}) {
     //   alert("Incorrect username or password");
     // }
   };
+
+  const handleLS = () => {
+    if (localStorage.getItem("isValid") === "true") {
+      setValidationStatus(true);
+      setTimeout(handelRedirect, 600);
+    }
+  };
+
+  document.body.onload = handleLS;
 
   const handelRedirect = () => {
     window.location.href = `/${homeUrl}`;
@@ -46,9 +62,11 @@ function Login({homeUrl}) {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <button type="submit">
-            Login
-        </button>
+        <div>
+          <label htmlFor="checkbox">remember me</label>
+          <input type="checkbox" id="checkbox" ref={checkbox} />
+        </div>
+        <button type="submit">Login</button>
       </form>
 
       {validationStatus && (
