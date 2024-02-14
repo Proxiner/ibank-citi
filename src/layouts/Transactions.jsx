@@ -19,10 +19,10 @@ function Transactions() {
   useEffect(() => {
     async function fetchDataAndUpdate() {
       const data = await fetchData()
-      cards.current.children[0].lastElementChild.textContent = `$${data.products[0].price},000`
-      cards.current.children[1].lastElementChild.textContent = `$${data.products[1].price},000`
-      cards.current.children[2].lastElementChild.textContent = `$${data.products[2].price},000`
-      cards.current.children[3].lastElementChild.textContent = `$${data.products[3].price},000`
+      cards.current.children[0].lastElementChild.textContent = `$${data.products[0].price}*1000`
+      cards.current.children[1].lastElementChild.textContent = `$${data.products[1].price}*1000`
+      cards.current.children[2].lastElementChild.textContent = `$${data.products[2].price}*1000`
+      cards.current.children[3].lastElementChild.textContent = `$${data.products[3].price}*1000`
     }
 
     fetchDataAndUpdate()
