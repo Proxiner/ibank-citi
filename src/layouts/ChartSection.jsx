@@ -8,7 +8,7 @@ function ChartSection() {
   const [productsPrice, setProductPrice] = useState([]);
 
   async function fetchData() {
-    const response = await fetch("https://dummyjson.com/products/");
+    const response = await fetch("https://api.slingacademy.com/v1/sample-data/products");
     const data = response.json();
     const result = data;
     return result;
@@ -46,7 +46,7 @@ function ChartSection() {
         label: "Be",
         backgroundColor: "#9791FC61",
         borderColor: "rgb(255, 99, 132)",
-        data: [0,0, productsPrice[2], 0],
+        data: [0,0, productsPrice[2]* 10, 0],
         tickLength: 10,
       },
       {
