@@ -149,22 +149,21 @@ function Home() {
   const handleModeChange = () => {
     setDarkMode(!darkMode);
     localStorage.setItem("DARK_MODE", !darkMode);
+    console.log(darkMode);
   };
 
-  useEffect(() => {
-    darkMode
-      ? (document.body.classList = "App_darkMode__jqoHn")
-      : (document.body.classList = "");
-  }, [darkMode]);
+  // useEffect(() => {
+  //   darkMode
+  //     ? (document.body.classList = "App_darkMode__jqhn")
+  //     : (document.body.classList = "");
+  // }, [darkMode]);
 
   return (
     <addCart.Provider
       value={{ cartMoney, setCartMoney, handleModeChange, darkMode }}
     >
       <div
-        className={`${styles.container} ${
-          darkMode ? "App_darkMode__jqoHn" : ""
-        }`}
+        className={styles.container }
       >
         <section className={styles.navbarSection}>
           <Navbar />

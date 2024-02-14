@@ -10,7 +10,7 @@ import { v4 } from "uuid";
 function Transactions() {
 
   async function fetchData() {
-    const response = await fetch("https://dummyjson.com/products/")
+    const response = await fetch("https://api.slingacademy.com/v1/sample-data/products")
     const data = response.json()
     const result = data
     return result
