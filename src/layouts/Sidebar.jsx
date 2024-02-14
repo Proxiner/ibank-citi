@@ -25,6 +25,7 @@ function Sidebar() {
   };
   const handleLogout = () => {
     localStorage.removeItem("isValid");
+    sessionStorage.removeItem("isValid")
     window.location.href = `/`;
   };
   return (

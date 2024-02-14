@@ -27,7 +27,6 @@ function Login({ homeUrl }) {
     // }
   };
   
-
   const handleLS = () => {
     if (localStorage.getItem("isValid") === "true") {
       setValidationStatus(true);

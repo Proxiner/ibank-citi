@@ -19,7 +19,7 @@ export const addCart = createContext("");
 
 function Home() {
   const handleRemeber = () => {
-    if (localStorage.getItem("isValid") !== true) {
+    if (localStorage.getItem("isValid") === null) {
       if (sessionStorage.getItem("isValid") === null) {
         window.location.href = "/";
       }
