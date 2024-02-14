@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef} from "react";
+import React, { useEffect, useState, useRef } from "react";
 import styles from "../App.module.scss";
 import LoginIllustration from "../assets/loginIlustration.png";
 
@@ -11,13 +11,14 @@ function Login({ homeUrl }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    if ((username === "ibankciti", password === "ibank1234")) {
+
+    if (username === "ibankciti" && password === "ibank1234") {
       setValidationStatus(true);
       setTimeout(handelRedirect, 600);
-      sessionStorage.setItem("isValid", true);
       if (checkbox.current.checked === true) {
         localStorage.setItem("isValid", true);
+      } else {
+        sessionStorage.setItem("isValid", true);
       }
     } else {
       setValidationStatus(false);
@@ -26,7 +27,6 @@ function Login({ homeUrl }) {
     //   alert("Incorrect username or password");
     // }
   };
-  
 
   const handleLS = () => {
     if (localStorage.getItem("isValid") === "true") {

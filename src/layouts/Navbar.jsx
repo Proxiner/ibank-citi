@@ -28,7 +28,7 @@ function Navbar() {
       >
         <form action="#">
           <div className={styles.input}>
-            <img src={searchIcon} alt="Search Icon" />
+            <img src={searchIcon} alt="Search Icon" className={`${darkMode ? 'Navbar_darkMode__2jQk1' : ''}`} />
             <input
               type="text"
               className={`${styles.inputText} ${darkMode ? 'Navbar_darkMode__2jQk1' : ''}`}

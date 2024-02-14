@@ -23,11 +23,13 @@ function Sidebar() {
   const hoverHandlerFive = () => {
     defaultActivedLi.current.style.top = "69%";
   };
-const handleLogout = () => {
-  localStorage.removeItem('isValid')
-  window.location.href = `/`;
-
-}
+  const handleLogout = () => {
+    localStorage.removeItem("isValid");
+    sessionStorage.removeItem("isValid");
+    setTimeout(() => {
+      window.location.href = `/`;
+    }, 500);
+  };
   return (
     <div
       className={`${styles.sidebar} ${
