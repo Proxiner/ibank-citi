@@ -44,7 +44,7 @@ nav {
     align-items: center;
     column-gap: 6px;
     cursor: pointer;
-    
+
     .logoImage {
       font-size: 30px;
       font-weight: 600;
@@ -62,7 +62,7 @@ nav {
       color: color.$black;
       font-style: italic;
     }
-    .darkMode{
+    .darkMode {
       color: rgb(229, 229, 229) !important;
     }
   }
@@ -94,11 +94,11 @@ nav {
           display: none !important;
         }
       }
-      .darkMode{
+      .darkMode {
         border-left-color: white;
         background-color: transparent !important;
       }
-      .darkMode::placeholder{
+      .darkMode::placeholder {
         color: rgb(212, 212, 212) !important;
       }
       .inputText::placeholder {
@@ -110,7 +110,7 @@ nav {
       }
     }
 
-    .darkMode{
+    .darkMode {
       background-color: rgb(72, 72, 72) !important;
     }
     .themeToggleBox {
@@ -122,7 +122,7 @@ nav {
       align-items: center;
       background: rgb(220, 220, 220);
       position: relative;
-      .darkMode{
+      .darkMode {
         background-color: rgb(181, 181, 181) !important;
       }
       .themeToggler {
@@ -137,7 +137,7 @@ nav {
         cursor: pointer;
         position: absolute;
         top: 5px;
-        transition: all 0.2s ease-in-out;        
+        transition: all 0.2s ease-in-out;
 
         .sun {
           width: 30px !important;
