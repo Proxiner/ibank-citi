@@ -1,6 +1,9 @@
 @use "../base/colors" as color;
 @use "../utils/MediaQueary.module" as *;
 
+.darkMode{
+  background: #404040 !important;
+}
 .sidebar {
   width: 6%;
   background: #ffffff;

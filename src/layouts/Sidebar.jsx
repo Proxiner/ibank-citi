@@ -1,7 +1,11 @@
-import React, { useRef } from "react";
+import React, { useContext, useRef } from "react";
 import styles from "./Sidebar.module.scss";
 import settingIcon from "../assets/settings.svg";
+import { addCart } from "../pages/Home";
+
 function Sidebar() {
+  const { darkMode } = useContext(addCart);
+
   const defaultActivedLi = useRef();
 
   const hoverHandlerOne = () => {
@@ -24,7 +28,11 @@ function Sidebar() {
     window.location.href = `/`;
   };
   return (
-    <div className={styles.sidebar}>
+    <div
+      className={`${styles.sidebar} ${
+        darkMode ? "Sidebar_darkMode__bpUj4" : ""
+      }`}
+    >
       <div className={styles.sidebarElements}>
         <div className={styles.navigationContainer}>
           <ul className={styles.sidebarNavigation}>
@@ -46,7 +54,7 @@ function Sidebar() {
                     id="Vector"
                     d="M18.05,4.818,12.29.788A4.853,4.853,0,0,0,6.8.918L1.79,4.828A5.153,5.153,0,0,0,0,8.468v6.9A4.631,4.631,0,0,0,4.62,20H15.4a4.622,4.622,0,0,0,4.62-4.62V8.6A5.1,5.1,0,0,0,18.05,4.818ZM10.76,16a.75.75,0,0,1-1.5,0V13a.75.75,0,0,1,1.5,0Z"
                     transform="translate(621.99 190.002)"
-                    fill="#1e1e1e"
+                    fill={`${darkMode ? "#eee" : "#1e1e1e"}`}
                   />
                   <path
                     id="Vector-2"
@@ -77,21 +85,21 @@ function Sidebar() {
                       id="Vector"
                       d="M13.75,21.5h-6C2.32,21.5,0,19.18,0,13.75v-6C0,2.32,2.32,0,7.75,0h6c5.43,0,7.75,2.32,7.75,7.75v6C21.5,19.18,19.18,21.5,13.75,21.5Zm-6-20C3.14,1.5,1.5,3.14,1.5,7.75v6C1.5,18.36,3.14,20,7.75,20h6C18.36,20,20,18.36,20,13.75v-6c0-4.61-1.64-6.25-6.25-6.25Z"
                       transform="translate(237.25 189.25)"
-                      fill="#1e1e1e"
+                      fill={`${darkMode ? "#eee" : "#1e1e1e"}`}
                     />
                     <path
                       id="Vector-2"
                       data-name="Vector"
                       d="M2.75,14.5A2.748,2.748,0,0,1,0,11.75v-9a2.75,2.75,0,0,1,5.5,0v9A2.748,2.748,0,0,1,2.75,14.5Zm0-13A1.25,1.25,0,0,0,1.5,2.75v9a1.25,1.25,0,0,0,2.5,0v-9A1.25,1.25,0,0,0,2.75,1.5Z"
                       transform="translate(248.75 192.75)"
-                      fill="#1e1e1e"
+                      fill={`${darkMode ? "#eee" : "#1e1e1e"}`}
                     />
                     <path
                       id="Vector-3"
                       data-name="Vector"
                       d="M2.75,9A2.748,2.748,0,0,1,0,6.25V2.75a2.75,2.75,0,0,1,5.5,0v3.5A2.748,2.748,0,0,1,2.75,9Zm0-7.5A1.25,1.25,0,0,0,1.5,2.75v3.5a1.25,1.25,0,0,0,2.5,0V2.75A1.25,1.25,0,0,0,2.75,1.5Z"
                       transform="translate(241.75 198.25)"
-                      fill="#1e1e1e"
+                      fill={`${darkMode ? "#eee" : "#1e1e1e"}`}
                     />
                     <path
                       id="Vector-4"
@@ -227,7 +235,42 @@ function Sidebar() {
 
         <div className={styles.settingContainer}>
           <button type="button" className={styles.settingBtn}>
-            <img src={settingIcon} alt="Setting Icon" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <g
+                id="vuesax_outline_setting"
+                data-name="vuesax/outline/setting"
+                transform="translate(-236 -190)"
+              >
+                <g id="setting">
+                  <path
+                    id="Vector"
+                    d="M9.76,21.267a3.8,3.8,0,0,1-1.88-.46l-5.5-3.17C.14,16.128,0,15.9,0,13.528V7.747c0-2.37.13-2.6,2.33-4.09L7.87.458a4.071,4.071,0,0,1,3.75,0l5.52,3.18c2.24,1.51,2.38,1.74,2.38,4.11v5.77c0,2.37-.13,2.6-2.33,4.09l-5.54,3.2A3.86,3.86,0,0,1,9.76,21.267Zm0-19.76a2.289,2.289,0,0,0-1.12.25l-5.5,3.18c-1.63,1.1-1.63,1.1-1.63,2.81v5.77c0,1.71,0,1.71,1.67,2.84l5.46,3.15a2.609,2.609,0,0,0,2.25,0l5.5-3.18c1.62-1.1,1.62-1.1,1.62-2.81V7.747c0-1.71,0-1.71-1.67-2.84l-5.46-3.15A2.289,2.289,0,0,0,9.76,1.507Z"
+                    transform="translate(238.24 191.363)"
+                    fill={`${darkMode ? "#eee" : "#1e1e1e"}`}
+                  />
+                  <path
+                    id="Vector-2"
+                    data-name="Vector"
+                    d="M3.75,7.5A3.75,3.75,0,1,1,7.5,3.75,3.751,3.751,0,0,1,3.75,7.5Zm0-6A2.25,2.25,0,1,0,6,3.75,2.253,2.253,0,0,0,3.75,1.5Z"
+                    transform="translate(244.25 198.25)"
+                    fill={`${darkMode ? "#eee" : "#1e1e1e"}`}
+                  />
+                  <path
+                    id="Vector-3"
+                    data-name="Vector"
+                    d="M0,0H24V24H0Z"
+                    transform="translate(236 190)"
+                    fill="none"
+                    opacity="0"
+                  />
+                </g>
+              </g>
+            </svg>
           </button>
         </div>
       </div>
