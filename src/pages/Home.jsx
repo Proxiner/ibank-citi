@@ -142,25 +142,9 @@ function Home() {
     },
   ];
 
-  const [darkMode, setDarkMode] = useState(
-    JSON.parse(localStorage.getItem("DARK_MODE"))
-  );
-
-  const handleModeChange = () => {
-    setDarkMode(!darkMode);
-    localStorage.setItem("DARK_MODE", !darkMode);
-    console.log(darkMode);
-  };
-
-  // useEffect(() => {
-  //   darkMode
-  //     ? (document.body.classList = "App_darkMode__jqhn")
-  //     : (document.body.classList = "");
-  // }, [darkMode]);
-
   return (
     <addCart.Provider
-      value={{ cartMoney, setCartMoney, handleModeChange, darkMode }}
+      value={{ cartMoney, setCartMoney }}
     >
       <div
         className={styles.container }

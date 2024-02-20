@@ -8,10 +8,7 @@
   width: 100%;
   height: max-content;
 
-  .darkMode{
-    color: white !important;
-    background-color: transparent !important;
-  }
+
   span {
     display: flex;
     justify-content: flex-start;
@@ -28,9 +25,6 @@
   }
 }
 
-.darkMode {
-  background-color: #444444 !important;
-}
 .cardBox {
   display: flex;
   justify-content: center;
@@ -64,9 +58,7 @@
     font-size: 14px;
     box-shadow: 10px 10px 20px #8888881d;
   }
-  .darkMode {
-    color: #fff !important;
-  }
+
   span {
     padding: 2px 50px 2px 5px;
     font-size: 14px;

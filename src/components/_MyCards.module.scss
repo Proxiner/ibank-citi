@@ -21,9 +21,6 @@
     margin-left: 50px;
   }
 
-  .darkMode {
-    color: white;
-  }
   .title {
     font-size: 25px;
     font-weight: bold;
@@ -43,9 +40,7 @@
     font-size: 16px;
     font-weight: 300;
     padding-right: 14px;
-    .darkMode {
-      color: white;
-    }
+
   }
 
   .money {
@@ -121,9 +116,7 @@
     border-radius: 10px;
     row-gap: 20px;
   }
-  .darkMode {
-    background-color: #404040 !important;
-  }
+
 }
 .suggestions {
   display: flex;
@@ -133,13 +126,7 @@
   row-gap: 7px;
   column-gap: 7px;
 
-  .darkMode {
-    background-color: #968df68d !important;
-  }
-  .darkMode:hover{
-    color: white !important;
-    background-color: #7e74f58d !important;
-  }
+
   span {
     background: #685dfb3d;
     color: #685dfbb0;
@@ -173,9 +160,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  .darkMode{
-    background-color: #717171 !important;
-  }
+
   .depositInput {
     width: 180px;
     height: 50px;

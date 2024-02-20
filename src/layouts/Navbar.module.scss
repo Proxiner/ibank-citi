@@ -107,9 +107,7 @@ nav {
       color: color.$black;
       font-style: italic;
     }
-    .darkMode {
-      color: rgb(229, 229, 229) !important;
-    }
+
   }
 
   .actionMobile {
@@ -147,13 +145,8 @@ nav {
         border-left: 1px solid color.$black;
         padding-left: 6px;
       }
-      .darkMode {
-        border-left-color: white;
-        background-color: transparent !important;
-      }
-      .darkMode::placeholder {
-        color: rgb(212, 212, 212) !important;
-      }
+
+
       .inputText::placeholder {
         font-size: 18px;
         font-weight: 100;
@@ -163,9 +156,6 @@ nav {
       }
     }
 
-    .darkMode {
-      background-color: rgb(72, 72, 72) !important;
-    }
     .themeToggleBox {
       width: 80px;
       height: 43px;
@@ -173,11 +163,9 @@ nav {
       display: flex;
       justify-content: center;
       align-items: center;
-      background: rgb(220, 220, 220);
+      background: #dcdcdc;
       position: relative;
-      .darkMode {
-        background-color: rgb(181, 181, 181) !important;
-      }
+
       .themeToggler {
         height: 80%;
         padding: 0 15px;
@@ -219,9 +207,7 @@ nav {
       transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
         stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    .darkMode {
-      stroke: white !important;
-    }
+
   }
 
   .line1 {

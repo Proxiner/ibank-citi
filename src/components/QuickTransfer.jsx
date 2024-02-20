@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from "react";
+import React, { useRef } from "react";
 import styles from "./_Transfer.module.scss";
 import CreditCardNumber from "./CreditCardNumber";
 import Sepah from "../assets/bank-sepah.svg";
@@ -15,7 +15,6 @@ import { EffectFlip, Pagination, Navigation } from "swiper/modules";
 import { addCart } from "../pages/Home";
 
 function QuickTransfer() {
-  const { darkMode } = useContext(addCart);
 
   const recaptchaRef = useRef();
 
@@ -42,7 +41,7 @@ function QuickTransfer() {
   return (
     <form onSubmit={handleSubmit} className={styles.quickTransferBox}>
       <h1 className={`${styles.Title}`}>
-        <span className={`${darkMode ? '_Transfer_darkMode__nqWR5' : ''}`}>Quick Money Transfer</span>
+        <span>Quick Money Transfer</span>
       </h1>
       <Swiper
         effect={"flip"}
@@ -94,14 +93,14 @@ function QuickTransfer() {
                 id="Vector"
                 d="M10.75,21.5A10.75,10.75,0,1,1,21.5,10.75,10.759,10.759,0,0,1,10.75,21.5Zm0-20A9.25,9.25,0,1,0,20,10.75,9.261,9.261,0,0,0,10.75,1.5Z"
                 transform="translate(1.25 1.25)"
-                fill={`${darkMode ? '#e8e8e8' : '#e8e8e8'}`}         
+                fill={'#e8e8e8'}         
                 />
               <path
                 id="Vector-2"
                 data-name="Vector"
                 d="M.747,8.558a.742.742,0,0,1-.53-.22.754.754,0,0,1,0-1.06l3-3-3-3A.75.75,0,0,1,1.278.218l3.53,3.53a.754.754,0,0,1,0,1.06l-3.53,3.53A.742.742,0,0,1,.747,8.558Z"
                 transform="translate(9.992 7.723)"
-                fill={`${darkMode ? '#e8e8e8' : '#626262'}`}         
+                fill={'#626262'}         
                 />
               <path
                 id="Vector-3"
@@ -127,14 +126,14 @@ function QuickTransfer() {
                 id="Vector"
                 d="M10.75,21.5A10.75,10.75,0,1,1,21.5,10.75,10.759,10.759,0,0,1,10.75,21.5Zm0-20A9.25,9.25,0,1,0,20,10.75,9.261,9.261,0,0,0,10.75,1.5Z"
                 transform="translate(1.25 1.25)"
-                fill={`${darkMode ? '#e8e8e8' : '#e8e8e8'}`}         
+                fill={'#e8e8e8'}         
               />
               <path
                 id="Vector-2"
                 data-name="Vector"
                 d="M.747,8.558a.742.742,0,0,1-.53-.22.754.754,0,0,1,0-1.06l3-3-3-3A.75.75,0,0,1,1.278.218l3.53,3.53a.754.754,0,0,1,0,1.06l-3.53,3.53A.742.742,0,0,1,.747,8.558Z"
                 transform="translate(9.992 7.723)"
-                fill={`${darkMode ? '#e8e8e8' : '#626262'}`}         
+                fill={'#626262'}         
               />
               <path
                 id="Vector-3"
@@ -148,7 +147,7 @@ function QuickTransfer() {
         </button>
       </Swiper>
       <div className="cardboxContiner">
-        <div className={`${styles.cardBox} ${darkMode ? '_Transfer_darkMode__nqWR5' : ''}`}>
+        <div className={`${styles.cardBox}`}>
           <img src={Sepah} alt="Sepah Icon" className={styles.slider} />
           <span>5859 ***** ***** 2245</span>
           <span className={styles.userName}>Mohammad</span>
