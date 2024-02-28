@@ -14,6 +14,136 @@
   align-items: center;
   position: relative;
 
+  .rememberMe{
+    justify-content: center;
+    align-items: center;
+    display: flex !important;
+    flex-direction: row;
+    position: relative;
+
+    input[type="checkbox"] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      -webkit-tap-highlight-color: transparent;
+      cursor: pointer;
+      margin: 0;
+    }
+    input[type="checkbox"]:focus {
+      outline: 0;
+    }
+    .cbx {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 0;
+      left: 50%;
+    }
+    .cbx input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      border: 2px solid #bfbfc0;
+      border-radius: 50%;
+      transition: all 0.2s ease;
+    }
+    .cbx input:hover {
+      border-color: #b0b0b1;
+    }
+    .cbx label {
+      width: 34px;
+      height: 34px;
+      background: none;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-filter: url("#goo");
+      filter: url("#goo");
+      transform: trasnlate3d(0, 0, 0);
+      pointer-events: none;
+    }
+    .cbx svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 1;
+      pointer-events: none;
+    }
+    .cbx svg path {
+      stroke: #fff;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 19;
+      stroke-dashoffset: 19;
+      transition: all 0.4s ease;
+    }
+    .cbx input:checked + label {
+      animation: splash 0.6s ease forwards;
+    }
+    .cbx input:checked + label + svg path {
+      stroke-dashoffset: 0;
+    }
+    @-moz-keyframes splash {
+      0% {
+        transform: scale(1.1);
+      }
+      40% {
+        transform: scale(1);
+        background: #4c95f7;
+        box-shadow: 0 -18px 0 -8px #4c95f7, 16px -8px 0 -8px #4c95f7, 16px 8px 0 -8px #4c95f7, 0 18px 0 -8px #4c95f7, -16px 8px 0 -8px #4c95f7, -16px -8px 0 -8px #4c95f7;
+      }
+      100% {
+        background: #4c95f7;
+        box-shadow: 0 -32px 0 -10px transparent, 28px -16px 0 -10px transparent, 28px 16px 0 -10px transparent, 0 32px 0 -10px transparent, -28px 16px 0 -10px transparent, -28px -16px 0 -10px transparent;
+      }
+    }
+    @-webkit-keyframes splash {
+      0% {
+        transform: scale(1.1);
+      }
+      40% {
+        transform: scale(1);
+        background: #4c95f7;
+        box-shadow: 0 -18px 0 -8px #4c95f7, 16px -8px 0 -8px #4c95f7, 16px 8px 0 -8px #4c95f7, 0 18px 0 -8px #4c95f7, -16px 8px 0 -8px #4c95f7, -16px -8px 0 -8px #4c95f7;
+      }
+      100% {
+        background: #4c95f7;
+        box-shadow: 0 -32px 0 -10px transparent, 28px -16px 0 -10px transparent, 28px 16px 0 -10px transparent, 0 32px 0 -10px transparent, -28px 16px 0 -10px transparent, -28px -16px 0 -10px transparent;
+      }
+    }
+    @-o-keyframes splash {
+      0% {
+        transform: scale(1.1);
+      }
+      40% {
+        transform: scale(1);
+        background: #4c95f7;
+        box-shadow: 0 -18px 0 -8px #4c95f7, 16px -8px 0 -8px #4c95f7, 16px 8px 0 -8px #4c95f7, 0 18px 0 -8px #4c95f7, -16px 8px 0 -8px #4c95f7, -16px -8px 0 -8px #4c95f7;
+      }
+      100% {
+        background: #4c95f7;
+        box-shadow: 0 -32px 0 -10px transparent, 28px -16px 0 -10px transparent, 28px 16px 0 -10px transparent, 0 32px 0 -10px transparent, -28px 16px 0 -10px transparent, -28px -16px 0 -10px transparent;
+      }
+    }
+    @keyframes splash {
+      0% {
+        transform: scale(1.1);
+      }
+      40% {
+        transform: scale(1);
+        background: #4c95f7;
+        box-shadow: 0 -18px 0 -8px #4c95f7, 16px -8px 0 -8px #4c95f7, 16px 8px 0 -8px #4c95f7, 0 18px 0 -8px #4c95f7, -16px 8px 0 -8px #4c95f7, -16px -8px 0 -8px #4c95f7;
+      }
+      100% {
+        background: #4c95f7;
+        box-shadow: 0 -32px 0 -10px transparent, 28px -16px 0 -10px transparent, 28px 16px 0 -10px transparent, 0 32px 0 -10px transparent, -28px 16px 0 -10px transparent, -28px -16px 0 -10px transparent;
+      }
+    }
+  }
   .successContainer {
     width: 100%;
     height: 100vh;

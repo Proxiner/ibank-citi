@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect } from "react";
+import React, { createContext, useState, useEffect, useContext } from "react";
 import Navbar from "../layouts/Navbar";
 import Sidebar from "../layouts/Sidebar";
 import QuickTransfer from "../components/QuickTransfer";
@@ -14,6 +14,7 @@ import CardImage from "../layouts/CardImage";
 import Transactions from "../layouts/Transactions";
 import Chart from "../layouts/ChartSection";
 import styles from "../App.module.scss";
+import { ThemeContext } from "../context/ThemeContext";
 
 export const addCart = createContext("");
 
@@ -142,12 +143,15 @@ function Home() {
     },
   ];
 
+    const {theme} = useContext(ThemeContext)
+
   return (
     <addCart.Provider
       value={{ cartMoney, setCartMoney }}
     >
       <div
-        className={styles.container }
+        className={styles.container}
+        style={theme ? {background: '#333'} : {background: '#fff'}}
       >
         <section className={styles.navbarSection}>
           <Navbar />

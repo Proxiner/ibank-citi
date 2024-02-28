@@ -26,6 +26,125 @@ nav {
   position: relative;
   right: 30px;
 
+  .overlayMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 180px;
+    padding-top: 30px;
+    width: 70%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    display: none;
+    z-index: 1000;
+    background-color: #f2f2f2b3;
+    backdrop-filter: blur(20px);
+    transition: all 0.5s ease-in-out;
+    box-shadow: 10px 0 30px #3d3d3d1f;
+
+    @media #{$mobile} {
+      display: flex;
+    }
+    @media #{$tablet} {
+      display: flex;
+    }
+
+    .iconContainers {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 100px;
+
+      .navigationContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .sidebarNavigation {
+          list-style-type: none;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+          row-gap: 40px;
+          position: relative;
+          
+          li {
+            position: relative;
+            cursor: pointer;
+
+            .sidebarIcons {
+              fill: black;
+            }
+          }
+          .purpleLine {
+            position: absolute;
+            top: 0%;
+            left: 98.4%;
+            border-radius: 5px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            width: 5px;
+            height: 26px;
+            background-color: #5f4efb;
+            box-shadow: -2px 0px 10px #5f4efb61;
+            @media #{$landscapeTablet} {
+              top: 22%;
+            }
+          }
+
+          li:hover {
+            .sidebarIcons:hover g path {
+              fill: #5f4efb;
+            }
+          }
+        }
+      }
+      .settingContainer {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .settingBtn {
+          border: none;
+          background: transparent;
+          cursor: pointer;
+        }
+      }
+    }
+    .input {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 6px;
+
+      .inputText {
+        width: auto;
+        height: 25px;
+        background-color: transparent;
+        border: none;
+        border-left: 1px solid color.$black;
+        padding-left: 6px;
+      }
+
+      .inputText::placeholder {
+        font-size: 18px;
+        font-weight: 100;
+      }
+      .inputText:focus {
+        outline: none;
+      }
+    }
+  }
+
   @media #{$mobile} {
     padding: 20px 0;
     padding-left: 0;
@@ -38,51 +157,6 @@ nav {
     right: 0;
   }
 
-
-  .menu {
-    display: none;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0; 
-     @media #{$mobile} {
-   display: flex;
-  }
-  }
-  .line {
-    fill: none;
-    stroke: black;
-    stroke-width: 6;
-    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .line1 {
-    stroke-dasharray: 60 207;
-    stroke-width: 6;
-  }
-  .line2 {
-    stroke-dasharray: 60 60;
-    stroke-width: 6;
-  }
-  .line3 {
-    stroke-dasharray: 60 207;
-    stroke-width: 6;
-  }
-  .opened .line1 {
-    stroke-dasharray: 90 207;
-    stroke-dashoffset: -134;
-    stroke-width: 6;
-  }
-  .opened .line2 {
-    stroke-dasharray: 1 60;
-    stroke-dashoffset: -30;
-    stroke-width: 6;
-  }
-  .opened .line3 {
-    stroke-dasharray: 90 207;
-    stroke-dashoffset: -134;
-    stroke-width: 6;
-  }
   .logo {
     display: flex;
     justify-content: center;
@@ -107,11 +181,16 @@ nav {
       color: color.$black;
       font-style: italic;
     }
-
   }
 
   .actionMobile {
     @media #{$mobile} {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 10px;
+    }
+    @media #{$tablet} {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -145,7 +224,6 @@ nav {
         border-left: 1px solid color.$black;
         padding-left: 6px;
       }
-
 
       .inputText::placeholder {
         font-size: 18px;
@@ -207,7 +285,6 @@ nav {
       transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
         stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-
   }
 
   .line1 {
