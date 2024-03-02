@@ -10,6 +10,12 @@ function Navbar() {
   const { theme, setTheme } = useContext(ThemeContext);
   const [menuClosed, setMenuClosed] = useState(true);
 
+  if(theme){
+    document.body.style.backgroundColor = '#333'
+  } else{
+    document.body.style.backgroundColor = '#fff'
+  }
+
   const handleMenuClick = (e) => {
     e.target.classList.toggle("opened");
     e.target.setAttribute(

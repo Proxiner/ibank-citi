@@ -151,7 +151,6 @@ function Home() {
     >
       <div
         className={styles.container}
-        style={theme ? {background: '#333'} : {background: '#fff'}}
       >
         <section className={styles.navbarSection}>
           <Navbar />
