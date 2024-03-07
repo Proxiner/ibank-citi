@@ -16,6 +16,7 @@ function Navbar() {
     document.body.style.backgroundColor = '#fff'
   }
 
+  
   const handleMenuClick = (e) => {
     e.target.classList.toggle("opened");
     e.target.setAttribute(
